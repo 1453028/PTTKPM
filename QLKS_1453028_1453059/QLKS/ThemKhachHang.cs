@@ -116,5 +116,10 @@ namespace QLKS
             khachHang.Email = dataGridViewKH.CurrentRow.Cells["Email"].Value.ToString();
             MessageBox.Show("Da cHon");
         }
+
+        private void btnTraCuu_Click(object sender, EventArgs e)
+        {
+            dataGridViewKH.DataSource = khachHangControl.search(txtTraCuu.Text);
+        }
     }
 }
