@@ -34,10 +34,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.btnPhong = new System.Windows.Forms.RadioButton();
+            this.rbtnHoaDon = new System.Windows.Forms.RadioButton();
+            this.rbtnKhachHang = new System.Windows.Forms.RadioButton();
+            this.rbtnDichVu = new System.Windows.Forms.RadioButton();
+            this.rbtnPhong = new System.Windows.Forms.RadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
@@ -59,6 +59,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.rbtnLoaiPhong = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -122,95 +123,96 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel2.Controls.Add(this.radioButton4);
-            this.panel2.Controls.Add(this.radioButton3);
-            this.panel2.Controls.Add(this.radioButton2);
-            this.panel2.Controls.Add(this.btnPhong);
+            this.panel2.Controls.Add(this.rbtnLoaiPhong);
+            this.panel2.Controls.Add(this.rbtnHoaDon);
+            this.panel2.Controls.Add(this.rbtnKhachHang);
+            this.panel2.Controls.Add(this.rbtnDichVu);
+            this.panel2.Controls.Add(this.rbtnPhong);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 35);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1171, 112);
             this.panel2.TabIndex = 1;
             // 
-            // radioButton4
+            // rbtnHoaDon
             // 
-            this.radioButton4.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.radioButton4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButton4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButton4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.radioButton4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton4.Image = global::QLKS.Properties.Resources.money;
-            this.radioButton4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.radioButton4.Location = new System.Drawing.Point(336, 0);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(112, 112);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Hóa đơn";
-            this.radioButton4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.radioButton4.UseMnemonic = false;
-            this.radioButton4.UseVisualStyleBackColor = false;
+            this.rbtnHoaDon.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.rbtnHoaDon.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtnHoaDon.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rbtnHoaDon.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rbtnHoaDon.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rbtnHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnHoaDon.Image = global::QLKS.Properties.Resources.money;
+            this.rbtnHoaDon.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rbtnHoaDon.Location = new System.Drawing.Point(336, 0);
+            this.rbtnHoaDon.Name = "rbtnHoaDon";
+            this.rbtnHoaDon.Size = new System.Drawing.Size(112, 112);
+            this.rbtnHoaDon.TabIndex = 3;
+            this.rbtnHoaDon.TabStop = true;
+            this.rbtnHoaDon.Text = "Hóa đơn";
+            this.rbtnHoaDon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rbtnHoaDon.UseMnemonic = false;
+            this.rbtnHoaDon.UseVisualStyleBackColor = false;
             // 
-            // radioButton3
+            // rbtnKhachHang
             // 
-            this.radioButton3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.radioButton3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButton3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButton3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.radioButton3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton3.Image = global::QLKS.Properties.Resources.woman;
-            this.radioButton3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.radioButton3.Location = new System.Drawing.Point(224, 0);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(112, 112);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Khách hàng";
-            this.radioButton3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.radioButton3.UseMnemonic = false;
-            this.radioButton3.UseVisualStyleBackColor = false;
+            this.rbtnKhachHang.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.rbtnKhachHang.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtnKhachHang.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rbtnKhachHang.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rbtnKhachHang.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rbtnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnKhachHang.Image = global::QLKS.Properties.Resources.woman;
+            this.rbtnKhachHang.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rbtnKhachHang.Location = new System.Drawing.Point(224, 0);
+            this.rbtnKhachHang.Name = "rbtnKhachHang";
+            this.rbtnKhachHang.Size = new System.Drawing.Size(112, 112);
+            this.rbtnKhachHang.TabIndex = 2;
+            this.rbtnKhachHang.TabStop = true;
+            this.rbtnKhachHang.Text = "Khách hàng";
+            this.rbtnKhachHang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rbtnKhachHang.UseMnemonic = false;
+            this.rbtnKhachHang.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
+            // rbtnDichVu
             // 
-            this.radioButton2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.radioButton2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButton2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButton2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton2.Image = global::QLKS.Properties.Resources.wine_bottle;
-            this.radioButton2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.radioButton2.Location = new System.Drawing.Point(112, 0);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(112, 112);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Dịch vụ";
-            this.radioButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.radioButton2.UseMnemonic = false;
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.rbtnDichVu.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.rbtnDichVu.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtnDichVu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rbtnDichVu.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rbtnDichVu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rbtnDichVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnDichVu.Image = global::QLKS.Properties.Resources.wine_bottle;
+            this.rbtnDichVu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rbtnDichVu.Location = new System.Drawing.Point(112, 0);
+            this.rbtnDichVu.Name = "rbtnDichVu";
+            this.rbtnDichVu.Size = new System.Drawing.Size(112, 112);
+            this.rbtnDichVu.TabIndex = 1;
+            this.rbtnDichVu.TabStop = true;
+            this.rbtnDichVu.Text = "Dịch vụ";
+            this.rbtnDichVu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rbtnDichVu.UseMnemonic = false;
+            this.rbtnDichVu.UseVisualStyleBackColor = false;
             // 
-            // btnPhong
+            // rbtnPhong
             // 
-            this.btnPhong.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btnPhong.Appearance = System.Windows.Forms.Appearance.Button;
-            this.btnPhong.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPhong.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnPhong.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhong.Image = global::QLKS.Properties.Resources.bed;
-            this.btnPhong.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnPhong.Location = new System.Drawing.Point(0, 0);
-            this.btnPhong.Name = "btnPhong";
-            this.btnPhong.Size = new System.Drawing.Size(112, 112);
-            this.btnPhong.TabIndex = 0;
-            this.btnPhong.TabStop = true;
-            this.btnPhong.Text = "Phòng";
-            this.btnPhong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnPhong.UseMnemonic = false;
-            this.btnPhong.UseVisualStyleBackColor = false;
+            this.rbtnPhong.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.rbtnPhong.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtnPhong.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rbtnPhong.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rbtnPhong.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rbtnPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnPhong.Image = global::QLKS.Properties.Resources.bed;
+            this.rbtnPhong.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rbtnPhong.Location = new System.Drawing.Point(0, 0);
+            this.rbtnPhong.Name = "rbtnPhong";
+            this.rbtnPhong.Size = new System.Drawing.Size(112, 112);
+            this.rbtnPhong.TabIndex = 0;
+            this.rbtnPhong.TabStop = true;
+            this.rbtnPhong.Text = "Phòng";
+            this.rbtnPhong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rbtnPhong.UseMnemonic = false;
+            this.rbtnPhong.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -424,6 +426,26 @@
             this.dataGridView1.Size = new System.Drawing.Size(891, 279);
             this.dataGridView1.TabIndex = 0;
             // 
+            // rbtnLoaiPhong
+            // 
+            this.rbtnLoaiPhong.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.rbtnLoaiPhong.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtnLoaiPhong.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rbtnLoaiPhong.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rbtnLoaiPhong.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rbtnLoaiPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnLoaiPhong.Image = global::QLKS.Properties.Resources.bed;
+            this.rbtnLoaiPhong.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rbtnLoaiPhong.Location = new System.Drawing.Point(448, 0);
+            this.rbtnLoaiPhong.Name = "rbtnLoaiPhong";
+            this.rbtnLoaiPhong.Size = new System.Drawing.Size(112, 112);
+            this.rbtnLoaiPhong.TabIndex = 4;
+            this.rbtnLoaiPhong.TabStop = true;
+            this.rbtnLoaiPhong.Text = "Loại phòng";
+            this.rbtnLoaiPhong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rbtnLoaiPhong.UseMnemonic = false;
+            this.rbtnLoaiPhong.UseVisualStyleBackColor = false;
+            // 
             // PhongInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -451,7 +473,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton btnPhong;
+        private System.Windows.Forms.RadioButton rbtnPhong;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -461,9 +483,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbtnHoaDon;
+        private System.Windows.Forms.RadioButton rbtnKhachHang;
+        private System.Windows.Forms.RadioButton rbtnDichVu;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -480,5 +502,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.RadioButton rbtnLoaiPhong;
     }
 }

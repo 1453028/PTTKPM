@@ -23,3 +23,4 @@ C:\Users\BeoU\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.PhongInter
 C:\Users\BeoU\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.Properties.Resources.resources
 C:\Users\BeoU\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.ThemKhachHang.resources
 C:\Users\BeoU\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.csproj.GenerateResource.Cache
+C:\Users\BeoU\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.LoaiPhongInterface.resources

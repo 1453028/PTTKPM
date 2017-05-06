@@ -9,7 +9,7 @@ namespace QLKS
     public class LoaiPhongDTO
     {
         private string _TenLoai;
-        private string _GiaCa;
+        private int _GiaCa;
 
         public string TenLoai
         {
@@ -22,7 +22,7 @@ namespace QLKS
             }
         }
 
-        public string GiaCa
+        public int GiaCa
         {
             get { return _GiaCa; }
             set { _GiaCa = value; }

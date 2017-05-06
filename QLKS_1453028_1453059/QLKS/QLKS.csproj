@@ -67,7 +67,15 @@
     <Compile Include="KhachHangDAO.cs" />
     <Compile Include="KhachHangDTO.cs" />
     <Compile Include="LoaiDichVuDTO.cs" />
+    <Compile Include="LoaiPhongCTL.cs" />
+    <Compile Include="LoaiPhongDAO.cs" />
     <Compile Include="LoaiPhongDTO.cs" />
+    <Compile Include="LoaiPhongInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoaiPhongInterface.Designer.cs">
+      <DependentUpon>LoaiPhongInterface.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhieuDichVuDTO.cs" />
     <Compile Include="PhongDTO.cs" />
     <Compile Include="PhongInterface.cs">
@@ -89,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoaiPhongInterface.resx">
+      <DependentUpon>LoaiPhongInterface.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhongInterface.resx">
       <DependentUpon>PhongInterface.cs</DependentUpon>
