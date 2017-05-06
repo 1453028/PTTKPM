@@ -12,6 +12,7 @@ namespace QLKS
 {
     public partial class LoaiPhongInterface : Form
     {
+        LoaiPhongCTL loaiPhongControl;
         public LoaiPhongInterface()
         {
             InitializeComponent();
@@ -20,6 +21,24 @@ namespace QLKS
         private void LoaiPhongInterface_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            string DBFullPathName = Application.StartupPath + "\\QLKS.mdb";
+            DataProvider.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + DBFullPathName;
+
+            loaiPhongControl = new LoaiPhongCTL();
+
+            dataGridViewThem.DataSource = loaiPhongControl.getTableLoaiPhong();
+            dataGridViewTraCuu.DataSource = loaiPhongControl.getTableLoaiPhong();
+        }
+
+
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string tenLoai = txtTenLoaiTraCuu.Text;
+            if (tenLoai == "") { return; }
+    
+
+
         }
 
 

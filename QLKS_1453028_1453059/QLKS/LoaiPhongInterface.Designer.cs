@@ -55,20 +55,20 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTenLoaiCapNhat = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btnCapNhat = new System.Windows.Forms.Button();
+            this.panelCapNhat = new System.Windows.Forms.Panel();
+            this.btnXacNhan = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txtGiaCaCapNhat = new System.Windows.Forms.TextBox();
             this.btnHuy = new System.Windows.Forms.Button();
-            this.dataGridViewCapNhat = new System.Windows.Forms.DataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.panelTraCuu = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.btnTim = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.txtTenLoaiTraCuu = new System.Windows.Forms.TextBox();
             this.dataGridViewTraCuu = new System.Windows.Forms.DataGridView();
+            this.btnCapNhat1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -78,11 +78,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThem)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCapNhat)).BeginInit();
+            this.panelCapNhat.SuspendLayout();
             this.panel7.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.panelTraCuu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTraCuu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,7 +96,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 35);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1263, 108);
+            this.panel2.Size = new System.Drawing.Size(1263, 114);
             this.panel2.TabIndex = 5;
             // 
             // rbtnLoaiPhong
@@ -112,7 +111,7 @@
             this.rbtnLoaiPhong.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.rbtnLoaiPhong.Location = new System.Drawing.Point(448, 0);
             this.rbtnLoaiPhong.Name = "rbtnLoaiPhong";
-            this.rbtnLoaiPhong.Size = new System.Drawing.Size(112, 108);
+            this.rbtnLoaiPhong.Size = new System.Drawing.Size(112, 114);
             this.rbtnLoaiPhong.TabIndex = 4;
             this.rbtnLoaiPhong.TabStop = true;
             this.rbtnLoaiPhong.Text = "Loại phòng";
@@ -132,7 +131,7 @@
             this.rbtnHoaDon.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.rbtnHoaDon.Location = new System.Drawing.Point(336, 0);
             this.rbtnHoaDon.Name = "rbtnHoaDon";
-            this.rbtnHoaDon.Size = new System.Drawing.Size(112, 108);
+            this.rbtnHoaDon.Size = new System.Drawing.Size(112, 114);
             this.rbtnHoaDon.TabIndex = 3;
             this.rbtnHoaDon.TabStop = true;
             this.rbtnHoaDon.Text = "Hóa đơn";
@@ -152,7 +151,7 @@
             this.rbtnKhachHang.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.rbtnKhachHang.Location = new System.Drawing.Point(224, 0);
             this.rbtnKhachHang.Name = "rbtnKhachHang";
-            this.rbtnKhachHang.Size = new System.Drawing.Size(112, 108);
+            this.rbtnKhachHang.Size = new System.Drawing.Size(112, 114);
             this.rbtnKhachHang.TabIndex = 2;
             this.rbtnKhachHang.TabStop = true;
             this.rbtnKhachHang.Text = "Khách hàng";
@@ -172,7 +171,7 @@
             this.rbtnDichVu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.rbtnDichVu.Location = new System.Drawing.Point(112, 0);
             this.rbtnDichVu.Name = "rbtnDichVu";
-            this.rbtnDichVu.Size = new System.Drawing.Size(112, 108);
+            this.rbtnDichVu.Size = new System.Drawing.Size(112, 114);
             this.rbtnDichVu.TabIndex = 1;
             this.rbtnDichVu.TabStop = true;
             this.rbtnDichVu.Text = "Dịch vụ";
@@ -192,7 +191,7 @@
             this.rbtnPhong.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.rbtnPhong.Location = new System.Drawing.Point(0, 0);
             this.rbtnPhong.Name = "rbtnPhong";
-            this.rbtnPhong.Size = new System.Drawing.Size(112, 108);
+            this.rbtnPhong.Size = new System.Drawing.Size(112, 114);
             this.rbtnPhong.TabIndex = 0;
             this.rbtnPhong.TabStop = true;
             this.rbtnPhong.Text = "Phòng";
@@ -257,9 +256,9 @@
             // 
             this.panel3.Controls.Add(this.tableLayoutPanel2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 143);
+            this.panel3.Location = new System.Drawing.Point(0, 149);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1263, 602);
+            this.panel3.Size = new System.Drawing.Size(1263, 596);
             this.panel3.TabIndex = 6;
             // 
             // tableLayoutPanel2
@@ -279,7 +278,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1263, 602);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1263, 596);
             this.tableLayoutPanel2.TabIndex = 19;
             // 
             // tableLayoutPanel1
@@ -295,7 +294,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(413, 594);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(413, 588);
             this.tableLayoutPanel1.TabIndex = 17;
             // 
             // panel4
@@ -309,7 +308,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(407, 172);
+            this.panel4.Size = new System.Drawing.Size(407, 170);
             this.panel4.TabIndex = 16;
             // 
             // label12
@@ -367,20 +366,21 @@
             // 
             this.dataGridViewThem.AllowUserToAddRows = false;
             this.dataGridViewThem.AllowUserToDeleteRows = false;
+            this.dataGridViewThem.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewThem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewThem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewThem.Location = new System.Drawing.Point(3, 181);
+            this.dataGridViewThem.Location = new System.Drawing.Point(3, 179);
             this.dataGridViewThem.Name = "dataGridViewThem";
             this.dataGridViewThem.ReadOnly = true;
             this.dataGridViewThem.RowTemplate.Height = 24;
-            this.dataGridViewThem.Size = new System.Drawing.Size(407, 410);
+            this.dataGridViewThem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewThem.Size = new System.Drawing.Size(407, 406);
             this.dataGridViewThem.TabIndex = 17;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.dataGridViewCapNhat, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.panel5, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(844, 4);
@@ -388,16 +388,16 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(415, 594);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(415, 588);
             this.tableLayoutPanel3.TabIndex = 18;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Controls.Add(this.panelCapNhat);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(3, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(409, 172);
+            this.panel5.Size = new System.Drawing.Size(409, 170);
             this.panel5.TabIndex = 0;
             // 
             // label6
@@ -421,35 +421,35 @@
             // 
             // txtTenLoaiCapNhat
             // 
-            this.txtTenLoaiCapNhat.Enabled = false;
             this.txtTenLoaiCapNhat.Location = new System.Drawing.Point(104, 53);
             this.txtTenLoaiCapNhat.Name = "txtTenLoaiCapNhat";
             this.txtTenLoaiCapNhat.Size = new System.Drawing.Size(321, 22);
             this.txtTenLoaiCapNhat.TabIndex = 13;
             // 
-            // panel6
+            // panelCapNhat
             // 
-            this.panel6.Controls.Add(this.btnHuy);
-            this.panel6.Controls.Add(this.label6);
-            this.panel6.Controls.Add(this.btnCapNhat);
-            this.panel6.Controls.Add(this.label9);
-            this.panel6.Controls.Add(this.label7);
-            this.panel6.Controls.Add(this.txtGiaCaCapNhat);
-            this.panel6.Controls.Add(this.txtTenLoaiCapNhat);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(409, 172);
-            this.panel6.TabIndex = 17;
+            this.panelCapNhat.Controls.Add(this.btnHuy);
+            this.panelCapNhat.Controls.Add(this.label6);
+            this.panelCapNhat.Controls.Add(this.btnXacNhan);
+            this.panelCapNhat.Controls.Add(this.label9);
+            this.panelCapNhat.Controls.Add(this.label7);
+            this.panelCapNhat.Controls.Add(this.txtGiaCaCapNhat);
+            this.panelCapNhat.Controls.Add(this.txtTenLoaiCapNhat);
+            this.panelCapNhat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCapNhat.Enabled = false;
+            this.panelCapNhat.Location = new System.Drawing.Point(0, 0);
+            this.panelCapNhat.Name = "panelCapNhat";
+            this.panelCapNhat.Size = new System.Drawing.Size(409, 170);
+            this.panelCapNhat.TabIndex = 17;
             // 
-            // btnCapNhat
+            // btnXacNhan
             // 
-            this.btnCapNhat.Location = new System.Drawing.Point(123, 157);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(156, 37);
-            this.btnCapNhat.TabIndex = 6;
-            this.btnCapNhat.Text = "Cập nhật";
-            this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnXacNhan.Location = new System.Drawing.Point(123, 157);
+            this.btnXacNhan.Name = "btnXacNhan";
+            this.btnXacNhan.Size = new System.Drawing.Size(156, 37);
+            this.btnXacNhan.TabIndex = 6;
+            this.btnXacNhan.Text = "Xác nhận";
+            this.btnXacNhan.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -462,7 +462,6 @@
             // 
             // txtGiaCaCapNhat
             // 
-            this.txtGiaCaCapNhat.Enabled = false;
             this.txtGiaCaCapNhat.Location = new System.Drawing.Point(104, 100);
             this.txtGiaCaCapNhat.Name = "txtGiaCaCapNhat";
             this.txtGiaCaCapNhat.Size = new System.Drawing.Size(321, 22);
@@ -477,34 +476,21 @@
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
-            // dataGridViewCapNhat
-            // 
-            this.dataGridViewCapNhat.AllowUserToAddRows = false;
-            this.dataGridViewCapNhat.AllowUserToDeleteRows = false;
-            this.dataGridViewCapNhat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCapNhat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewCapNhat.Location = new System.Drawing.Point(3, 181);
-            this.dataGridViewCapNhat.Name = "dataGridViewCapNhat";
-            this.dataGridViewCapNhat.ReadOnly = true;
-            this.dataGridViewCapNhat.RowTemplate.Height = 24;
-            this.dataGridViewCapNhat.Size = new System.Drawing.Size(409, 410);
-            this.dataGridViewCapNhat.TabIndex = 18;
-            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.tableLayoutPanel4);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(424, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(413, 594);
+            this.panel7.Size = new System.Drawing.Size(413, 588);
             this.panel7.TabIndex = 19;
             // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.panel8, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.dataGridViewTraCuu, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.panelTraCuu, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -512,20 +498,21 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(413, 594);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(413, 588);
             this.tableLayoutPanel4.TabIndex = 18;
             // 
-            // panel8
+            // panelTraCuu
             // 
-            this.panel8.Controls.Add(this.label10);
-            this.panel8.Controls.Add(this.btnTim);
-            this.panel8.Controls.Add(this.label13);
-            this.panel8.Controls.Add(this.txtTenLoaiTraCuu);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(3, 3);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(407, 172);
-            this.panel8.TabIndex = 16;
+            this.panelTraCuu.Controls.Add(this.btnCapNhat1);
+            this.panelTraCuu.Controls.Add(this.label10);
+            this.panelTraCuu.Controls.Add(this.btnTim);
+            this.panelTraCuu.Controls.Add(this.label13);
+            this.panelTraCuu.Controls.Add(this.txtTenLoaiTraCuu);
+            this.panelTraCuu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTraCuu.Location = new System.Drawing.Point(3, 3);
+            this.panelTraCuu.Name = "panelTraCuu";
+            this.panelTraCuu.Size = new System.Drawing.Size(407, 170);
+            this.panelTraCuu.TabIndex = 16;
             // 
             // label10
             // 
@@ -545,6 +532,7 @@
             this.btnTim.TabIndex = 6;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // label13
             // 
@@ -566,14 +554,25 @@
             // 
             this.dataGridViewTraCuu.AllowUserToAddRows = false;
             this.dataGridViewTraCuu.AllowUserToDeleteRows = false;
+            this.dataGridViewTraCuu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewTraCuu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTraCuu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewTraCuu.Location = new System.Drawing.Point(3, 181);
+            this.dataGridViewTraCuu.Location = new System.Drawing.Point(3, 179);
             this.dataGridViewTraCuu.Name = "dataGridViewTraCuu";
             this.dataGridViewTraCuu.ReadOnly = true;
             this.dataGridViewTraCuu.RowTemplate.Height = 24;
-            this.dataGridViewTraCuu.Size = new System.Drawing.Size(407, 410);
-            this.dataGridViewTraCuu.TabIndex = 17;
+            this.dataGridViewTraCuu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewTraCuu.Size = new System.Drawing.Size(407, 406);
+            this.dataGridViewTraCuu.TabIndex = 18;
+            // 
+            // btnCapNhat1
+            // 
+            this.btnCapNhat1.Location = new System.Drawing.Point(276, 93);
+            this.btnCapNhat1.Name = "btnCapNhat1";
+            this.btnCapNhat1.Size = new System.Drawing.Size(156, 37);
+            this.btnCapNhat1.TabIndex = 18;
+            this.btnCapNhat1.Text = "Cập nhật";
+            this.btnCapNhat1.UseVisualStyleBackColor = true;
             // 
             // LoaiPhongInterface
             // 
@@ -599,13 +598,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThem)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCapNhat)).EndInit();
+            this.panelCapNhat.ResumeLayout(false);
+            this.panelCapNhat.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
+            this.panelTraCuu.ResumeLayout(false);
+            this.panelTraCuu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTraCuu)).EndInit();
             this.ResumeLayout(false);
 
@@ -637,21 +635,21 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panelTraCuu;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtTenLoaiTraCuu;
-        private System.Windows.Forms.DataGridView dataGridViewTraCuu;
-        private System.Windows.Forms.DataGridView dataGridViewCapNhat;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panelCapNhat;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnCapNhat;
+        private System.Windows.Forms.Button btnXacNhan;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtGiaCaCapNhat;
         private System.Windows.Forms.TextBox txtTenLoaiCapNhat;
+        private System.Windows.Forms.DataGridView dataGridViewTraCuu;
+        private System.Windows.Forms.Button btnCapNhat1;
     }
 }
