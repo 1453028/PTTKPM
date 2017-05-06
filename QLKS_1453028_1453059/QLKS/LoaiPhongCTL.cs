@@ -33,6 +33,10 @@ namespace QLKS
         {
            dataAccess.update(info);
         }
+        public void updateGia(LoaiPhongDTO info)
+        {
+            dataAccess.updateGia(info);
+        }
 
         public bool isExist(string tenLoai)
         {

@@ -16,8 +16,8 @@ namespace QLKS
         private DateTime _GioNhan;
         private DateTime _NgayTra;
         private DateTime _GioTra;
-        private string _TienDatCoc;
-        private string _GiaCaTDT;
+        private int _TienDatCoc;
+        private int _GiaCaTDT;
 
         public string MaThue
         {
@@ -72,12 +72,12 @@ namespace QLKS
             set { _GioTra = value; }
         }
 
-        public string TienDatCoc
+        public int TienDatCoc
         {
             get { return _TienDatCoc; }
             set { _TienDatCoc = value; }
         }
-        public string GiaCaTDT
+        public int GiaCaTDT
         {
             get { return _GiaCaTDT; }
             set { _GiaCaTDT = value; }

@@ -121,5 +121,10 @@ namespace QLKS
                 dataGridView.DataSource = PhongControl.search(selected);
             }
         }
+
+        private void btn_LapPhieuDat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

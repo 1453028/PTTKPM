@@ -39,3 +39,5 @@ C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.exe
 C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.pdb
 C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.CTThue_Interface.resources
 C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.Form2.resources
+C:\Users\BeoU\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.CTThue_Interface.resources
+C:\Users\BeoU\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.Form2.resources

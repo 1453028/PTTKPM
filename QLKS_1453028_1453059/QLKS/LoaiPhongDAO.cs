@@ -57,8 +57,16 @@ namespace QLKS
         public void update(LoaiPhongDTO info)
         {
             string updateCommand = "UPDATE LoaiPhong (TenLoai, GiaCa) " +
-                                    "SET TenLoai = '" + info.TenLoai +  "',"+
+                                    " SET TenLoai = '" + info.TenLoai +  "',"+
                                     "GiaCa = '" + info.GiaCa + "'";
+
+            provider.executeNonQuery(updateCommand);
+        }
+
+        public void updateGia(LoaiPhongDTO info)
+        {
+            string updateCommand = "UPDATE LoaiPhong" +
+                                    " SET GiaCa = '" + info.GiaCa + "' WHERE TenLoai = '" + info.TenLoai + "'";
 
             provider.executeNonQuery(updateCommand);
         }
