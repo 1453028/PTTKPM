@@ -23,7 +23,7 @@ namespace QLKS
 
             string[] LoaiTimKiem = new string[] { "Mã phòng", "Loại phòng", "Tình trạng" };
             cmbSearchType.DataSource = LoaiTimKiem;
-            cmbSearchType.SelectedIndex = cmbSearchType.FindString("Mã Phòng");
+            cmbSearchType.SelectedIndex = cmbSearchType.FindString("Mã phòng");
             labMaPhong.Visible = true;
             SearchMaPhong.Visible = true;
 
