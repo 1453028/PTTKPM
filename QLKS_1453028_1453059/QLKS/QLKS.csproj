@@ -53,7 +53,15 @@
     <Compile Include="CTDat_Interface.Designer.cs">
       <DependentUpon>CTDat_Interface.cs</DependentUpon>
     </Compile>
+    <Compile Include="CTDKDichVuCTL.cs" />
+    <Compile Include="CTDKDichVuDAO.cs" />
     <Compile Include="CTDKDichVuDTO.cs" />
+    <Compile Include="CTDKDV_Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTDKDV_Interface.Designer.cs">
+      <DependentUpon>CTDKDV_Interface.cs</DependentUpon>
+    </Compile>
     <Compile Include="CTPhongDatDAO.cs" />
     <Compile Include="CTPhongDatDTO.cs" />
     <Compile Include="CTPhongThueDTO.cs" />
@@ -88,7 +96,15 @@
     <Compile Include="KhachHangCTL.cs" />
     <Compile Include="KhachHangDAO.cs" />
     <Compile Include="KhachHangDTO.cs" />
+    <Compile Include="LoadDichVuDAO.cs" />
+    <Compile Include="LoaiDichVuCTL.cs" />
     <Compile Include="LoaiDichVuDTO.cs" />
+    <Compile Include="LoaiDichVu_Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoaiDichVu_Interface.Designer.cs">
+      <DependentUpon>LoaiDichVu_Interface.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoaiPhongCTL.cs" />
     <Compile Include="LoaiPhongDAO.cs" />
     <Compile Include="LoaiPhongDTO.cs" />
@@ -119,6 +135,9 @@
     <EmbeddedResource Include="CTDat_Interface.resx">
       <DependentUpon>CTDat_Interface.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CTDKDV_Interface.resx">
+      <DependentUpon>CTDKDV_Interface.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CTThue_Interface.resx">
       <DependentUpon>CTThue_Interface.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoaiDichVu_Interface.resx">
+      <DependentUpon>LoaiDichVu_Interface.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoaiPhongInterface.resx">
       <DependentUpon>LoaiPhongInterface.cs</DependentUpon>

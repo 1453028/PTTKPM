@@ -17,25 +17,8 @@ namespace QLKS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-//<<<<<<< HEAD
-//            //Application.Run(new DangNhapInterface());
-//            //GlobalFunction.UpdateAppSetting("QuyenHan", "NhanVien");
 
-//            //DateTime dateToDisplay = DateTime.Today;
-//            //string display = dateToDisplay.ToShortDateString();
-//            //GlobalFunction.UpdateAppSetting("NgayThang", display);
-//            //Application.Run(Global.LoaiPhongInterface);
-//=======
-//            Application.Run(new DangNhapInterface());
-
-//            //GlobalFunction.UpdateAppSetting("QuyenHan", "NhanVien");
-
-//            //DateTime dateToDisplay = DateTime.Today;
-//            //string display = dateToDisplay.ToShortDateString();
-//            //GlobalFunction.UpdateAppSetting("NgayThang", display);
-//>>>>>>> 6557281d2abd2deec2b869016a6feabb29d35d92
-
-            Application.Run(new LoaiPhongInterface());
+            Application.Run(new CTDKDV_Interface());
         }
 
        

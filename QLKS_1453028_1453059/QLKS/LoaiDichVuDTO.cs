@@ -9,7 +9,7 @@ namespace QLKS
     public class LoaiDichVuDTO
     {
         private string _TenDV;
-        private string _GiaCa;
+        private int _GiaCa;
         private string _TinhTrang;
         private int _SoLuong;
 
@@ -24,7 +24,7 @@ namespace QLKS
             }
         }
 
-        public string GiaCa
+        public int GiaCa
         {
             get { return _GiaCa; }
             set { _GiaCa = value; }
