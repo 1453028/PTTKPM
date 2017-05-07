@@ -42,5 +42,10 @@ namespace QLKS
         {
             return dataAccess.isExist(tenLoai);
         }
+
+        public int getGia(string loaiPhong)
+        {
+            return dataAccess.getGia(loaiPhong);
+        }
     }
 }

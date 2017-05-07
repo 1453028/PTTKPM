@@ -56,6 +56,8 @@
     <Compile Include="CTDKDichVuDTO.cs" />
     <Compile Include="CTPhongDatDAO.cs" />
     <Compile Include="CTPhongDatDTO.cs" />
+    <Compile Include="CTPhongThueCTL.cs" />
+    <Compile Include="CTPhongThueDAO.cs" />
     <Compile Include="CTPhongThueDTO.cs" />
     <Compile Include="CTThue_Interface.cs">
       <SubType>Form</SubType>

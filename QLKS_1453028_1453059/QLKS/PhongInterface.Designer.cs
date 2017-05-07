@@ -51,11 +51,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnLapPhieuThue = new System.Windows.Forms.Button();
             this.btn_LapPhieuDat = new System.Windows.Forms.Button();
-            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewPhong = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhong)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -213,7 +213,6 @@
             this.rbtnPhong.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.rbtnPhong.Cursor = System.Windows.Forms.Cursors.Default;
             this.rbtnPhong.Dock = System.Windows.Forms.DockStyle.Left;
-            this.rbtnPhong.Enabled = false;
             this.rbtnPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtnPhong.Image = global::QLKS.Properties.Resources.bed;
             this.rbtnPhong.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -240,7 +239,7 @@
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.btnLapPhieuThue);
             this.panel4.Controls.Add(this.btn_LapPhieuDat);
-            this.panel4.Controls.Add(this.dataGridView);
+            this.panel4.Controls.Add(this.dataGridViewPhong);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 147);
             this.panel4.Name = "panel4";
@@ -366,16 +365,16 @@
             this.btn_LapPhieuDat.UseVisualStyleBackColor = true;
             this.btn_LapPhieuDat.Click += new System.EventHandler(this.btn_LapPhieuDat_Click);
             // 
-            // dataGridView
+            // dataGridViewPhong
             // 
-            this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(37, 241);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView.Size = new System.Drawing.Size(1088, 323);
-            this.dataGridView.TabIndex = 0;
+            this.dataGridViewPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPhong.Location = new System.Drawing.Point(37, 241);
+            this.dataGridViewPhong.Name = "dataGridViewPhong";
+            this.dataGridViewPhong.RowTemplate.Height = 24;
+            this.dataGridViewPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewPhong.Size = new System.Drawing.Size(1088, 323);
+            this.dataGridViewPhong.TabIndex = 0;
             // 
             // PhongInterface
             // 
@@ -393,7 +392,7 @@
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhong)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -411,7 +410,7 @@
         private System.Windows.Forms.RadioButton rbtnKhachHang;
         private System.Windows.Forms.RadioButton rbtnDichVu;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.DataGridView dataGridViewPhong;
         private System.Windows.Forms.Button btnLapPhieuThue;
         private System.Windows.Forms.Button btn_LapPhieuDat;
         private System.Windows.Forms.RadioButton rbtnLoaiPhong;

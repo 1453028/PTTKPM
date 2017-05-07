@@ -78,5 +78,7 @@ namespace QLKS
             string sqlString = "SELECT * FROM Phong WHERE MaPhong = '" + MaPhong + "'";
             return provider.executeQueryToTable(sqlString).Rows.Count == 0 ? false : true;
         }
+
+
     }
 }

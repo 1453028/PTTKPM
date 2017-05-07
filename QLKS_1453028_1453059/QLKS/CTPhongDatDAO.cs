@@ -93,7 +93,7 @@ namespace QLKS
 
         public bool isExist(string MaPhong, string CMND, DateTime Ngay)
         {
-            string sqlString = "SELECT * FROM KhachHang WHERE MaPhongDat LIKE '%" + MaPhong + "%' and CMND = '" + CMND + "' and NgayDat LIKE '%" + Ngay + "%'";
+            string sqlString = "SELECT * FROM ChiTietPhongDat WHERE MaPhongDat LIKE '%" + MaPhong + "%' and CMND = '" + CMND + "' and NgayDat LIKE '%" + Ngay + "%'";
             return provider.executeQueryToTable(sqlString).Rows.Count == 0 ? false : true;
         }
     }

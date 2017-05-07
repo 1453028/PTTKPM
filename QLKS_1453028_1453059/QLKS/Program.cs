@@ -35,7 +35,7 @@ namespace QLKS
 //            //GlobalFunction.UpdateAppSetting("NgayThang", display);
 //>>>>>>> 6557281d2abd2deec2b869016a6feabb29d35d92
 
-            Application.Run(new LoaiPhongInterface());
+            Application.Run(new PhongInterface());
         }
 
        

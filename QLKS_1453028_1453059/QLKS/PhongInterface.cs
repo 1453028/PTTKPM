@@ -15,6 +15,7 @@ namespace QLKS
     {
         PhongCTL PhongControl;
         LoaiPhongCTL LoaiPhongControl;
+        PhongDTO phong = null;
 
         public PhongInterface()
         {
@@ -58,7 +59,7 @@ namespace QLKS
             PhongControl = new PhongCTL();
             LoaiPhongControl = new LoaiPhongCTL();
 
-            dataGridView.DataSource = PhongControl.getTablePhong();
+            dataGridViewPhong.DataSource = PhongControl.getTablePhong();
             
         }
 
@@ -111,7 +112,7 @@ namespace QLKS
 
         private void btnDanhSach_Click(object sender, EventArgs e)
         {
-            dataGridView.DataSource = PhongControl.getTablePhong();
+            dataGridViewPhong.DataSource = PhongControl.getTablePhong();
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
@@ -130,12 +131,12 @@ namespace QLKS
             }
             if (selectedType == "Mã phòng")
             {
-                dataGridView.DataSource = PhongControl.search(SearchMaPhong.Text);
+                dataGridViewPhong.DataSource = PhongControl.search(SearchMaPhong.Text);
             }
             else
             {
                 string selected = cmbType.GetItemText(cmbType.SelectedItem);
-                dataGridView.DataSource = PhongControl.search(selected);
+                dataGridViewPhong.DataSource = PhongControl.search(selected);
             }
         }
 
@@ -146,15 +147,37 @@ namespace QLKS
 
         private void rbtnLoaiPhong_CheckedChanged(object sender, EventArgs e)
         {
-            //Global.LoaiPhongInterface.Show();
-
-           // LoaiPhongInterface loaiPhong = new LoaiPhongInterface();
-           // loaiPhong.ShowDialog();
+            this.Hide();
+            var form2 = new LoaiPhongInterface();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
         }
 
         private void btnLapPhieuThue_Click(object sender, EventArgs e)
         {
+            layThongTinPhongChon();
+            if (phong == null || phong.TinhTrang=="Đặt") { return; }
+            using (var form = new CTThue_Interface(phong))
+            {
+                var result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    phong.TinhTrang = "Đặt";
+                    dataGridViewPhong.DataSource = PhongControl.getTablePhong();
+                }
+            }
+            //CTThue_Interface ctthue = new CTThue_Interface();
+            //ctthue.ShowDialog();
 
+        }
+
+        private PhongDTO layThongTinPhongChon()
+        {
+            phong = new PhongDTO();
+            phong.MaPhong = dataGridViewPhong.CurrentRow.Cells["MaPhong"].Value.ToString();
+            phong.LoaiPhong = dataGridViewPhong.CurrentRow.Cells["LoaiPhong"].Value.ToString();
+            phong.TinhTrang = dataGridViewPhong.CurrentRow.Cells["TinhTrang"].Value.ToString();
+            return phong;
         }
     }
 }

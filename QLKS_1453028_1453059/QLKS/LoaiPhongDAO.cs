@@ -77,5 +77,17 @@ namespace QLKS
             return provider.executeQueryToTable(sqlString).Rows.Count == 0 ? false : true;
         }
 
+        public int getGia(string loaiPhong)
+        {
+            int gia = 0;
+            string query = "SELECT * FROM LoaiPhong WHERE TenLoai = '" + loaiPhong + "'";
+            OleDbDataReader reader = (OleDbDataReader)provider.executeQuery(query);
+            while (reader.Read())
+            {
+                gia = int.Parse(reader["GiaCa"].ToString());
+            }
+            reader.Close();
+            return gia;
+        }
     }
 }

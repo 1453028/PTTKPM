@@ -63,6 +63,7 @@
             this.txtTienDatCoc.Name = "txtTienDatCoc";
             this.txtTienDatCoc.Size = new System.Drawing.Size(275, 27);
             this.txtTienDatCoc.TabIndex = 29;
+            this.txtTienDatCoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTienDatCoc_KeyPress);
             // 
             // label12
             // 
@@ -237,6 +238,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CTThue_Interface";
             this.Text = "CTThue_Interface";
+            this.Load += new System.EventHandler(this.CTThue_Interface_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
