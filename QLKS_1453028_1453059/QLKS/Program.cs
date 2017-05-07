@@ -17,13 +17,15 @@ namespace QLKS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DangNhapInterface());
-            GlobalFunction.UpdateAppSetting("QuyenHan", "NhanVien");
+            //Application.Run(new DangNhapInterface());
+            //GlobalFunction.UpdateAppSetting("QuyenHan", "NhanVien");
 
-            DateTime dateToDisplay = DateTime.Today;
-            string display = dateToDisplay.ToShortDateString();
-            GlobalFunction.UpdateAppSetting("NgayThang", display);
+            //DateTime dateToDisplay = DateTime.Today;
+            //string display = dateToDisplay.ToShortDateString();
+            //GlobalFunction.UpdateAppSetting("NgayThang", display);
+            //Application.Run(Global.LoaiPhongInterface);
 
+            Application.Run(new LoaiPhongInterface());
         }
 
        

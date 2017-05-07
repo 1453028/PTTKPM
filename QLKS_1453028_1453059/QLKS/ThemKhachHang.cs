@@ -12,7 +12,14 @@ namespace QLKS
 {
     public partial class ThemKhachHang : Form
     {
+        KhachHangDTO khachHang = null;
         KhachHangCTL khachHangControl;
+       // public KhachHangDTO KhachHang { get; set; }
+        public KhachHangDTO KhachHang
+        {
+            get { return khachHang; }
+            set{ khachHang = value; }
+        }
         public ThemKhachHang()
         {
             InitializeComponent();
@@ -108,13 +115,15 @@ namespace QLKS
 
         private void btnChon_Click(object sender, EventArgs e)
         {
-            KhachHangDTO khachHang = new KhachHangDTO();
+            khachHang = new KhachHangDTO();
             khachHang.HoTen = dataGridViewKH.CurrentRow.Cells["HoTen"].Value.ToString();
             khachHang.CMND = dataGridViewKH.CurrentRow.Cells["CMND"].Value.ToString();
             khachHang.GioiTinh = dataGridViewKH.CurrentRow.Cells["GioiTinh"].Value.ToString();
             khachHang.DienThoai = dataGridViewKH.CurrentRow.Cells["DienThoai"].Value.ToString();
             khachHang.Email = dataGridViewKH.CurrentRow.Cells["Email"].Value.ToString();
-            MessageBox.Show("Da cHon");
+            this.DialogResult = DialogResult.OK;
+            
+            //MessageBox.Show("Da cHon");
         }
 
         private void btnTraCuu_Click(object sender, EventArgs e)

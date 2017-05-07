@@ -143,5 +143,18 @@ namespace QLKS
         {
 
         }
+
+        private void rbtnLoaiPhong_CheckedChanged(object sender, EventArgs e)
+        {
+            //Global.LoaiPhongInterface.Show();
+
+           // LoaiPhongInterface loaiPhong = new LoaiPhongInterface();
+           // loaiPhong.ShowDialog();
+        }
+
+        private void btnLapPhieuThue_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

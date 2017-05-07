@@ -149,6 +149,9 @@ namespace QLKS
             dataGridViewLoaiPhong.DataSource = loaiPhongControl.getTableLoaiPhong();
         }
 
-
+        private void rbtnPhong_CheckedChanged(object sender, EventArgs e)
+        {
+           // Global.PhongInterface.Show();
+        }
     }
 }

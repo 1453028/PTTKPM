@@ -40,7 +40,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGridViewLoaiPhong = new System.Windows.Forms.DataGridView();
             this.panelCapNhat = new System.Windows.Forms.Panel();
+            this.txtTenLoaiCapNhat = new System.Windows.Forms.Label();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -55,14 +57,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtGiaCaThem = new System.Windows.Forms.TextBox();
             this.txtTenLoaiThem = new System.Windows.Forms.TextBox();
-            this.dataGridViewLoaiPhong = new System.Windows.Forms.DataGridView();
-            this.txtTenLoaiCapNhat = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLoaiPhong)).BeginInit();
             this.panelCapNhat.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLoaiPhong)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -178,6 +178,7 @@
             this.rbtnPhong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.rbtnPhong.UseMnemonic = false;
             this.rbtnPhong.UseVisualStyleBackColor = false;
+            this.rbtnPhong.CheckedChanged += new System.EventHandler(this.rbtnPhong_CheckedChanged);
             // 
             // label4
             // 
@@ -243,6 +244,20 @@
             this.panel3.Size = new System.Drawing.Size(1263, 630);
             this.panel3.TabIndex = 6;
             // 
+            // dataGridViewLoaiPhong
+            // 
+            this.dataGridViewLoaiPhong.AllowUserToAddRows = false;
+            this.dataGridViewLoaiPhong.AllowUserToDeleteRows = false;
+            this.dataGridViewLoaiPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewLoaiPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewLoaiPhong.Location = new System.Drawing.Point(12, 207);
+            this.dataGridViewLoaiPhong.Name = "dataGridViewLoaiPhong";
+            this.dataGridViewLoaiPhong.ReadOnly = true;
+            this.dataGridViewLoaiPhong.RowTemplate.Height = 24;
+            this.dataGridViewLoaiPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewLoaiPhong.Size = new System.Drawing.Size(1233, 411);
+            this.dataGridViewLoaiPhong.TabIndex = 18;
+            // 
             // panelCapNhat
             // 
             this.panelCapNhat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -259,6 +274,14 @@
             this.panelCapNhat.Size = new System.Drawing.Size(618, 183);
             this.panelCapNhat.TabIndex = 17;
             this.panelCapNhat.TabStop = true;
+            // 
+            // txtTenLoaiCapNhat
+            // 
+            this.txtTenLoaiCapNhat.AutoSize = true;
+            this.txtTenLoaiCapNhat.Location = new System.Drawing.Point(104, 53);
+            this.txtTenLoaiCapNhat.Name = "txtTenLoaiCapNhat";
+            this.txtTenLoaiCapNhat.Size = new System.Drawing.Size(0, 17);
+            this.txtTenLoaiCapNhat.TabIndex = 20;
             // 
             // btnCapNhat
             // 
@@ -393,28 +416,6 @@
             this.txtTenLoaiThem.Size = new System.Drawing.Size(471, 22);
             this.txtTenLoaiThem.TabIndex = 13;
             // 
-            // dataGridViewLoaiPhong
-            // 
-            this.dataGridViewLoaiPhong.AllowUserToAddRows = false;
-            this.dataGridViewLoaiPhong.AllowUserToDeleteRows = false;
-            this.dataGridViewLoaiPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewLoaiPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewLoaiPhong.Location = new System.Drawing.Point(12, 207);
-            this.dataGridViewLoaiPhong.Name = "dataGridViewLoaiPhong";
-            this.dataGridViewLoaiPhong.ReadOnly = true;
-            this.dataGridViewLoaiPhong.RowTemplate.Height = 24;
-            this.dataGridViewLoaiPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewLoaiPhong.Size = new System.Drawing.Size(1233, 411);
-            this.dataGridViewLoaiPhong.TabIndex = 18;
-            // 
-            // txtTenLoaiCapNhat
-            // 
-            this.txtTenLoaiCapNhat.AutoSize = true;
-            this.txtTenLoaiCapNhat.Location = new System.Drawing.Point(104, 53);
-            this.txtTenLoaiCapNhat.Name = "txtTenLoaiCapNhat";
-            this.txtTenLoaiCapNhat.Size = new System.Drawing.Size(0, 17);
-            this.txtTenLoaiCapNhat.TabIndex = 20;
-            // 
             // LoaiPhongInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -431,11 +432,11 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLoaiPhong)).EndInit();
             this.panelCapNhat.ResumeLayout(false);
             this.panelCapNhat.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLoaiPhong)).EndInit();
             this.ResumeLayout(false);
 
         }
