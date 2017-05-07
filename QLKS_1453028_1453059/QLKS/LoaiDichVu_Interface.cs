@@ -17,6 +17,10 @@ namespace QLKS
         public LoaiDichVu_Interface()
         {
             InitializeComponent();
+            string[] LoaiTinhTrang = new string[] { "Còn", "Hết", "Ngưng" };
+            string[] LoaiTinhTrangCN = new string[] { "Còn", "Hết", "Ngưng" };
+            cmbTinhTrang.DataSource = LoaiTinhTrang;
+            cmbTinhTrangCapNhat.DataSource = LoaiTinhTrangCN;
         }
 
         private void LoaiDichVu_Interface_Load(object sender, EventArgs e)
@@ -77,11 +81,6 @@ namespace QLKS
                 txtGiaCaCapNhat.Select();
                 return true;
             }
-            else if(txtTinhTrangCapNhat.Text == "")
-            {
-                txtTinhTrangCapNhat.Select();
-                return true;
-            }
             else if(txtSLCapNhat.Text == "")
             {
                 txtSLCapNhat.Select();
@@ -109,11 +108,6 @@ namespace QLKS
                 txtGiaCaThem.Select();
                 return false;
             }
-            else if (txtTinhTrangThem.Text == "")
-            {
-                txtTinhTrangThem.Select();
-                return false;
-            }
             else if (txtSLThem.Text == "")
             {
                 txtSLThem.Select();
@@ -126,14 +120,14 @@ namespace QLKS
         {
             loaiDV.TenDV = txtTenLoaiCapNhat.Text;
             loaiDV.GiaCa = int.Parse(txtGiaCaCapNhat.Text);
-            loaiDV.TinhTrang = txtTinhTrangCapNhat.Text;
+            loaiDV.TinhTrang = (string)cmbTinhTrangCapNhat.SelectedItem;
             loaiDV.SoLuong = int.Parse(txtSLCapNhat.Text);
         }
         private void layThongTinThem(ref LoaiDichVuDTO loaiDV)
         {
             loaiDV.TenDV = txtTenLoaiThem.Text;
             loaiDV.GiaCa = int.Parse(txtGiaCaThem.Text);
-            loaiDV.TinhTrang = txtTinhTrangThem.Text;
+            loaiDV.TinhTrang = (string)cmbTinhTrang.SelectedItem;
             loaiDV.SoLuong = int.Parse(txtSLThem.Text);
         }
 
@@ -145,7 +139,7 @@ namespace QLKS
                 enableCapNhapPanel();
                 txtTenLoaiCapNhat.Text = dataGridViewLoaiPhong.SelectedRows[0].Cells["TenDichVu"].Value.ToString();
                 txtGiaCaCapNhat.Text = dataGridViewLoaiPhong.SelectedRows[0].Cells["GiaCa"].Value.ToString();
-                txtTinhTrangCapNhat.Text = dataGridViewLoaiPhong.SelectedRows[0].Cells["TinhTrang"].Value.ToString();
+                cmbTinhTrangCapNhat.SelectedItem = dataGridViewLoaiPhong.SelectedRows[0].Cells["TinhTrang"].Value.ToString();
                 txtSLCapNhat.Text = dataGridViewLoaiPhong.SelectedRows[0].Cells["SoLuong"].Value.ToString();
             }
             else
@@ -158,7 +152,7 @@ namespace QLKS
         {
             txtGiaCaCapNhat.Text = "";
             txtTenLoaiCapNhat.Text = "";
-            txtTinhTrangCapNhat.Text = "";
+
             txtSLCapNhat.Text = "";
             disableCapNhapPanel();
         }
@@ -174,10 +168,15 @@ namespace QLKS
             loaiDVControl.update(loaiDV);
             txtGiaCaCapNhat.Text = "";
             txtTenLoaiCapNhat.Text = "";
-            txtTinhTrangCapNhat.Text = "";
+
             txtSLCapNhat.Text = "";
             disableCapNhapPanel();
             dataGridViewLoaiPhong.DataSource = loaiDVControl.getTableLoaiDV();
+        }
+
+        private void panelCapNhat_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

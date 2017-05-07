@@ -70,13 +70,6 @@ namespace QLKS
             provider.executeNonQuery(updateCommand);
         }
 
-        //public void updateGia(LoaiDichVuDTO info)
-        //{
-        //    string updateCommand = "UPDATE LoaiDichVu" +
-        //                            " SET GiaCa = '" + info.GiaCa + "' WHERE TenLoai = '" + info.TenLoai + "'";
-
-        //    provider.executeNonQuery(updateCommand);
-        //}
 
         public bool isExist(string tenDV)
         {
