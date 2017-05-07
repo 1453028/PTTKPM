@@ -30,6 +30,23 @@ namespace QLKS
 
             btnCapNhat.Visible = false;
             btnThemPhong.Visible = false;
+
+            if (GlobalFunction.ReadAppSetting("QuyenHan") == "NhanVien")
+            {
+                labQuyen.Text = "Quyền hạn: Nhân viên";
+            }else
+            {
+                if (GlobalFunction.ReadAppSetting("QuyenHan") == "NhanVien")
+                {
+                    labQuyen.Text = "Quyền hạn: Admin";
+                }
+                else
+                {
+                    labQuyen.Text = "Quyền hạn: Error AppSetting";
+                }
+            }
+
+            labNgayThang.Text = GlobalFunction.ReadAppSetting("NgayThang");
         }
 
         private void PhongInterface_Load(object sender, EventArgs e)

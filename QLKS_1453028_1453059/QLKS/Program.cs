@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace QLKS
 {
@@ -16,7 +17,15 @@ namespace QLKS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PhongInterface());
+            Application.Run(new DangNhapInterface());
+            GlobalFunction.UpdateAppSetting("QuyenHan", "NhanVien");
+
+            DateTime dateToDisplay = DateTime.Today;
+            string display = dateToDisplay.ToShortDateString();
+            GlobalFunction.UpdateAppSetting("NgayThang", display);
+
         }
+
+       
     }
 }
