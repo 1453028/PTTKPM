@@ -90,12 +90,17 @@ namespace QLKS
             string selectedType = (string)cmbQuyenHan.SelectedItem;
             if (selectedType == "Nhân viên")
             {
-                var frm = new PhongInterface();
-                frm.Location = this.Location;
-                frm.StartPosition = FormStartPosition.Manual;
-                frm.FormClosing += delegate { this.Show(); };
-                frm.Show();
+                //var frm = new PhongInterface();
+                //frm.Location = this.Location;
+                //frm.StartPosition = FormStartPosition.Manual;
+                //frm.FormClosing += delegate { this.Show(); };
+                //frm.Show();
+                //this.Hide();
+
                 this.Hide();
+                var form2 = new PhongInterface();
+                form2.Closed += (s, args) => this.Close();
+                form2.Show();
 
                 //GlobalFunction.UpdateAppSetting("QuyenHan", "NhanVien");
             }
@@ -105,12 +110,17 @@ namespace QLKS
                 {
                     if (Password == txtMatKhau.Text)
                     {
-                        var frm = new PhongInterface();
-                        frm.Location = this.Location;
-                        frm.StartPosition = FormStartPosition.Manual;
-                        frm.FormClosing += delegate { this.Show(); };
-                        frm.Show();
+                        //var frm = new PhongInterface();
+                        //frm.Location = this.Location;
+                        //frm.StartPosition = FormStartPosition.Manual;
+                        //frm.FormClosing += delegate { this.Show(); };
+                        //frm.Show();
+                        //this.Hide();
+
                         this.Hide();
+                        var form2 = new PhongInterface();
+                        form2.Closed += (s, args) => this.Close();
+                        form2.Show();
 
                         //GlobalFunction.UpdateAppSetting("QuyenHan", "Admin");
                     }

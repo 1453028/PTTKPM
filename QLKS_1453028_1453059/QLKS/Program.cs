@@ -18,11 +18,12 @@ namespace QLKS
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new DangNhapInterface());
-            GlobalFunction.UpdateAppSetting("QuyenHan", "NhanVien");
 
-            DateTime dateToDisplay = DateTime.Today;
-            string display = dateToDisplay.ToShortDateString();
-            GlobalFunction.UpdateAppSetting("NgayThang", display);
+            //GlobalFunction.UpdateAppSetting("QuyenHan", "NhanVien");
+
+            //DateTime dateToDisplay = DateTime.Today;
+            //string display = dateToDisplay.ToShortDateString();
+            //GlobalFunction.UpdateAppSetting("NgayThang", display);
 
         }
 

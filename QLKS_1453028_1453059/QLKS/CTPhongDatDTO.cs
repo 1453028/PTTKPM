@@ -16,8 +16,8 @@ namespace QLKS
         private DateTime _NgayTraDK;
         private DateTime _GioTraDK;
         private DateTime _NgayDat;
-
-
+        private string _TinhTrang;
+        
         public string MaPhongDat
         {
             get { return _MaPhongDat; }
@@ -76,6 +76,12 @@ namespace QLKS
                     throw new Exception("Ngay dat khong duoc rong");
                 _NgayDat = value;
             }
+        }
+
+        public string TinhTrang
+        {
+            get { return _TinhTrang; }
+            set { _TinhTrang = value; }
         }
 
     }

@@ -41,3 +41,4 @@ C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.CTThue_Int
 C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.Form2.resources
 C:\Users\BeoU\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.CTThue_Interface.resources
 C:\Users\BeoU\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.Form2.resources
+C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.CTDat_Interface.resources
