@@ -47,7 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CTDat_Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTDat_Interface.Designer.cs">
+      <DependentUpon>CTDat_Interface.cs</DependentUpon>
+    </Compile>
     <Compile Include="CTDKDichVuDTO.cs" />
+    <Compile Include="CTPhongDatDAO.cs" />
     <Compile Include="CTPhongDatDTO.cs" />
     <Compile Include="CTPhongThueDTO.cs" />
     <Compile Include="CTThue_Interface.cs">
@@ -109,6 +116,9 @@
     <Compile Include="ThemKhachHang.Designer.cs">
       <DependentUpon>ThemKhachHang.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CTDat_Interface.resx">
+      <DependentUpon>CTDat_Interface.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CTThue_Interface.resx">
       <DependentUpon>CTThue_Interface.cs</DependentUpon>
     </EmbeddedResource>
