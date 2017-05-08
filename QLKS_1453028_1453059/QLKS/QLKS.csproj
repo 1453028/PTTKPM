@@ -62,6 +62,7 @@
     <Compile Include="CTDKDV_Interface.Designer.cs">
       <DependentUpon>CTDKDV_Interface.cs</DependentUpon>
     </Compile>
+    <Compile Include="CTPhongDatCTL.cs" />
     <Compile Include="CTPhongDatDAO.cs" />
     <Compile Include="CTPhongDatDTO.cs" />
     <Compile Include="CTPhongThueCTL.cs" />
@@ -231,6 +232,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="notes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mortgage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sofa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wine-menu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

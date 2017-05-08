@@ -20,7 +20,6 @@ namespace QLKS
         public PhongInterface()
         {
             InitializeComponent();
-
             string[] LoaiTimKiem = new string[] { "Mã phòng", "Loại phòng", "Tình trạng" };
             cmbSearchType.DataSource = LoaiTimKiem;
             cmbSearchType.SelectedIndex = cmbSearchType.FindString("Mã phòng");
@@ -155,13 +154,7 @@ namespace QLKS
             }
         }
 
-        private void rbtnLoaiPhong_CheckedChanged(object sender, EventArgs e)
-        {
-            this.Hide();
-            var form2 = new LoaiPhongInterface();
-            form2.Closed += (s, args) => this.Close();
-            form2.Show();
-        }
+
 
         private void btnLapPhieuThue_Click(object sender, EventArgs e)
         {
@@ -188,6 +181,121 @@ namespace QLKS
             phong.LoaiPhong = dataGridViewPhong.CurrentRow.Cells["LoaiPhong"].Value.ToString();
             phong.TinhTrang = dataGridViewPhong.CurrentRow.Cells["TinhTrang"].Value.ToString();
             return phong;
+        }
+
+
+
+        private void rbtnPhieuThue_CheckedChanged(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form2 = new PhieuThueInterface();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
+        }
+
+        private void rbtnLoaiPhong_CheckedChanged(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form2 = new LoaiPhongInterface();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
+        }
+
+        //private void rbtnDichVu_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    this.Hide();
+        //    var form2 = new CTDKDV_Interface();
+        //    form2.Closed += (s, args) => this.Close();
+        //    form2.Show();
+        //}
+
+        private void rbtnLoaiDV_CheckedChanged(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form2 = new LoaiDichVu_Interface();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
+        }
+
+        private void rbtnHoaDon_CheckedChanged(object sender, EventArgs e)
+        {
+            //this.Hide();
+            //var form2 = new HoaDonInterface();
+            //form2.Closed += (s, args) => this.Close();
+            //form2.Show();
+        }
+
+        private void rbtnKhachHang_CheckedChanged(object sender, EventArgs e)
+        {
+            //this.Hide();
+            //var form2 = new KhachHangInterface();
+            //form2.Closed += (s, args) => this.Close();
+            //form2.Show();
+        }
+
+
+        private void rbtnPhieuDat_CheckedChanged(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form2 = new PhieuDatInterface();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
+        }
+
+        private void btnPhieuThue_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form2 = new PhieuThueInterface();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
+        }
+
+        private void btnLoaiPhong_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form2 = new LoaiPhongInterface();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
+        }
+
+        private void btnDichVu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form2 = new CTDKDV_Interface();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
+        }
+
+        private void btnLoaiDichVu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form2 = new LoaiDichVu_Interface();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            //this.Hide();
+            //var form2 = new HoaDonInterface();
+            //form2.Closed += (s, args) => this.Close();
+            //form2.Show();
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            //this.Hide();
+            //var form2 = new KhachHangInterface();
+            //form2.Closed += (s, args) => this.Close();
+            //form2.Show();
+        }
+
+        private void btnPhieuDat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form2 = new PhieuDatInterface();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
         }
     }
 }

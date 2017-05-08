@@ -47,6 +47,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.rbtnLoaiDV = new System.Windows.Forms.RadioButton();
+            this.rbtnPhieuThue = new System.Windows.Forms.RadioButton();
+            this.rbtnPhieuDat = new System.Windows.Forms.RadioButton();
             this.rbtnLoaiPhong = new System.Windows.Forms.RadioButton();
             this.rbtnHoaDon = new System.Windows.Forms.RadioButton();
             this.rbtnKhachHang = new System.Windows.Forms.RadioButton();
@@ -206,6 +208,8 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.Controls.Add(this.rbtnLoaiDV);
+            this.panel2.Controls.Add(this.rbtnPhieuThue);
+            this.panel2.Controls.Add(this.rbtnPhieuDat);
             this.panel2.Controls.Add(this.rbtnLoaiPhong);
             this.panel2.Controls.Add(this.rbtnHoaDon);
             this.panel2.Controls.Add(this.rbtnKhachHang);
@@ -276,19 +280,61 @@
             this.rbtnLoaiDV.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtnLoaiDV.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rbtnLoaiDV.Cursor = System.Windows.Forms.Cursors.Default;
-            this.rbtnLoaiDV.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbtnLoaiDV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtnLoaiDV.Image = global::QLKS.Properties.Resources.wine_bottle;
+            this.rbtnLoaiDV.Image = global::QLKS.Properties.Resources.wine_menu;
             this.rbtnLoaiDV.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rbtnLoaiDV.Location = new System.Drawing.Point(560, 0);
+            this.rbtnLoaiDV.Location = new System.Drawing.Point(572, 1);
             this.rbtnLoaiDV.Name = "rbtnLoaiDV";
-            this.rbtnLoaiDV.Size = new System.Drawing.Size(112, 113);
-            this.rbtnLoaiDV.TabIndex = 5;
+            this.rbtnLoaiDV.Size = new System.Drawing.Size(116, 112);
+            this.rbtnLoaiDV.TabIndex = 39;
             this.rbtnLoaiDV.TabStop = true;
             this.rbtnLoaiDV.Text = "Loại dịch vụ";
             this.rbtnLoaiDV.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.rbtnLoaiDV.UseMnemonic = false;
             this.rbtnLoaiDV.UseVisualStyleBackColor = false;
+            this.rbtnLoaiDV.CheckedChanged += new System.EventHandler(this.rbtnLoaiDV_CheckedChanged);
+            // 
+            // rbtnPhieuThue
+            // 
+            this.rbtnPhieuThue.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.rbtnPhieuThue.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtnPhieuThue.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rbtnPhieuThue.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rbtnPhieuThue.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rbtnPhieuThue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnPhieuThue.Image = global::QLKS.Properties.Resources.mortgage;
+            this.rbtnPhieuThue.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rbtnPhieuThue.Location = new System.Drawing.Point(224, 0);
+            this.rbtnPhieuThue.Name = "rbtnPhieuThue";
+            this.rbtnPhieuThue.Size = new System.Drawing.Size(112, 113);
+            this.rbtnPhieuThue.TabIndex = 38;
+            this.rbtnPhieuThue.TabStop = true;
+            this.rbtnPhieuThue.Text = "Phiếu thuê";
+            this.rbtnPhieuThue.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rbtnPhieuThue.UseMnemonic = false;
+            this.rbtnPhieuThue.UseVisualStyleBackColor = false;
+            this.rbtnPhieuThue.CheckedChanged += new System.EventHandler(this.rbtnPhieuThue_CheckedChanged);
+            // 
+            // rbtnPhieuDat
+            // 
+            this.rbtnPhieuDat.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.rbtnPhieuDat.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtnPhieuDat.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rbtnPhieuDat.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rbtnPhieuDat.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rbtnPhieuDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnPhieuDat.Image = global::QLKS.Properties.Resources.notes;
+            this.rbtnPhieuDat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rbtnPhieuDat.Location = new System.Drawing.Point(112, 0);
+            this.rbtnPhieuDat.Name = "rbtnPhieuDat";
+            this.rbtnPhieuDat.Size = new System.Drawing.Size(112, 113);
+            this.rbtnPhieuDat.TabIndex = 37;
+            this.rbtnPhieuDat.TabStop = true;
+            this.rbtnPhieuDat.Text = "Phiếu đặt";
+            this.rbtnPhieuDat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rbtnPhieuDat.UseMnemonic = false;
+            this.rbtnPhieuDat.UseVisualStyleBackColor = false;
+            this.rbtnPhieuDat.CheckedChanged += new System.EventHandler(this.rbtnPhieuDat_CheckedChanged);
             // 
             // rbtnLoaiPhong
             // 
@@ -296,19 +342,19 @@
             this.rbtnLoaiPhong.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtnLoaiPhong.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rbtnLoaiPhong.Cursor = System.Windows.Forms.Cursors.Default;
-            this.rbtnLoaiPhong.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbtnLoaiPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtnLoaiPhong.Image = global::QLKS.Properties.Resources.bed;
+            this.rbtnLoaiPhong.Image = global::QLKS.Properties.Resources.sofa;
             this.rbtnLoaiPhong.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rbtnLoaiPhong.Location = new System.Drawing.Point(448, 0);
+            this.rbtnLoaiPhong.Location = new System.Drawing.Point(336, 1);
             this.rbtnLoaiPhong.Name = "rbtnLoaiPhong";
-            this.rbtnLoaiPhong.Size = new System.Drawing.Size(112, 113);
-            this.rbtnLoaiPhong.TabIndex = 4;
+            this.rbtnLoaiPhong.Size = new System.Drawing.Size(121, 112);
+            this.rbtnLoaiPhong.TabIndex = 36;
             this.rbtnLoaiPhong.TabStop = true;
             this.rbtnLoaiPhong.Text = "Loại phòng";
             this.rbtnLoaiPhong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.rbtnLoaiPhong.UseMnemonic = false;
             this.rbtnLoaiPhong.UseVisualStyleBackColor = false;
+            this.rbtnLoaiPhong.CheckedChanged += new System.EventHandler(this.rbtnLoaiPhong_CheckedChanged);
             // 
             // rbtnHoaDon
             // 
@@ -316,19 +362,19 @@
             this.rbtnHoaDon.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtnHoaDon.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rbtnHoaDon.Cursor = System.Windows.Forms.Cursors.Default;
-            this.rbtnHoaDon.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbtnHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtnHoaDon.Image = global::QLKS.Properties.Resources.money;
             this.rbtnHoaDon.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rbtnHoaDon.Location = new System.Drawing.Point(336, 0);
+            this.rbtnHoaDon.Location = new System.Drawing.Point(688, 1);
             this.rbtnHoaDon.Name = "rbtnHoaDon";
-            this.rbtnHoaDon.Size = new System.Drawing.Size(112, 113);
-            this.rbtnHoaDon.TabIndex = 3;
+            this.rbtnHoaDon.Size = new System.Drawing.Size(121, 112);
+            this.rbtnHoaDon.TabIndex = 35;
             this.rbtnHoaDon.TabStop = true;
             this.rbtnHoaDon.Text = "Hóa đơn";
             this.rbtnHoaDon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.rbtnHoaDon.UseMnemonic = false;
             this.rbtnHoaDon.UseVisualStyleBackColor = false;
+            this.rbtnHoaDon.CheckedChanged += new System.EventHandler(this.rbtnHoaDon_CheckedChanged);
             // 
             // rbtnKhachHang
             // 
@@ -336,19 +382,19 @@
             this.rbtnKhachHang.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtnKhachHang.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rbtnKhachHang.Cursor = System.Windows.Forms.Cursors.Default;
-            this.rbtnKhachHang.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbtnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtnKhachHang.Image = global::QLKS.Properties.Resources.woman;
             this.rbtnKhachHang.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rbtnKhachHang.Location = new System.Drawing.Point(224, 0);
+            this.rbtnKhachHang.Location = new System.Drawing.Point(806, 1);
             this.rbtnKhachHang.Name = "rbtnKhachHang";
-            this.rbtnKhachHang.Size = new System.Drawing.Size(112, 113);
-            this.rbtnKhachHang.TabIndex = 2;
+            this.rbtnKhachHang.Size = new System.Drawing.Size(118, 112);
+            this.rbtnKhachHang.TabIndex = 34;
             this.rbtnKhachHang.TabStop = true;
             this.rbtnKhachHang.Text = "Khách hàng";
             this.rbtnKhachHang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.rbtnKhachHang.UseMnemonic = false;
             this.rbtnKhachHang.UseVisualStyleBackColor = false;
+            this.rbtnKhachHang.CheckedChanged += new System.EventHandler(this.rbtnKhachHang_CheckedChanged);
             // 
             // rbtnDichVu
             // 
@@ -356,14 +402,13 @@
             this.rbtnDichVu.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtnDichVu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.rbtnDichVu.Cursor = System.Windows.Forms.Cursors.Default;
-            this.rbtnDichVu.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbtnDichVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtnDichVu.Image = global::QLKS.Properties.Resources.wine_bottle;
             this.rbtnDichVu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rbtnDichVu.Location = new System.Drawing.Point(112, 0);
+            this.rbtnDichVu.Location = new System.Drawing.Point(456, 1);
             this.rbtnDichVu.Name = "rbtnDichVu";
-            this.rbtnDichVu.Size = new System.Drawing.Size(112, 113);
-            this.rbtnDichVu.TabIndex = 1;
+            this.rbtnDichVu.Size = new System.Drawing.Size(117, 112);
+            this.rbtnDichVu.TabIndex = 33;
             this.rbtnDichVu.TabStop = true;
             this.rbtnDichVu.Text = "Dịch vụ";
             this.rbtnDichVu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -383,12 +428,13 @@
             this.rbtnPhong.Location = new System.Drawing.Point(0, 0);
             this.rbtnPhong.Name = "rbtnPhong";
             this.rbtnPhong.Size = new System.Drawing.Size(112, 113);
-            this.rbtnPhong.TabIndex = 0;
+            this.rbtnPhong.TabIndex = 32;
             this.rbtnPhong.TabStop = true;
             this.rbtnPhong.Text = "Phòng";
             this.rbtnPhong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.rbtnPhong.UseMnemonic = false;
             this.rbtnPhong.UseVisualStyleBackColor = false;
+            this.rbtnPhong.CheckedChanged += new System.EventHandler(this.rbtnPhong_CheckedChanged);
             // 
             // CTDKDV_Interface
             // 
@@ -417,11 +463,6 @@
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton rbtnLoaiPhong;
-        private System.Windows.Forms.RadioButton rbtnHoaDon;
-        private System.Windows.Forms.RadioButton rbtnKhachHang;
-        private System.Windows.Forms.RadioButton rbtnDichVu;
-        private System.Windows.Forms.RadioButton rbtnPhong;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -435,8 +476,15 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Button btn_ThemCT;
-        private System.Windows.Forms.RadioButton rbtnLoaiDV;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Label labMaThue;
+        private System.Windows.Forms.RadioButton rbtnLoaiDV;
+        private System.Windows.Forms.RadioButton rbtnPhieuThue;
+        private System.Windows.Forms.RadioButton rbtnPhieuDat;
+        private System.Windows.Forms.RadioButton rbtnLoaiPhong;
+        private System.Windows.Forms.RadioButton rbtnHoaDon;
+        private System.Windows.Forms.RadioButton rbtnKhachHang;
+        private System.Windows.Forms.RadioButton rbtnDichVu;
+        private System.Windows.Forms.RadioButton rbtnPhong;
     }
 }
