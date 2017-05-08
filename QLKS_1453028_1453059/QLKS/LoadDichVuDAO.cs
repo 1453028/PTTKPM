@@ -39,7 +39,7 @@ namespace QLKS
                 loaiDV.TenDV = reader["TenDichVu"].ToString();
                 loaiDV.GiaCa = int.Parse(reader["GiaCa"].ToString());
                 loaiDV.TinhTrang = reader["TinhTrang"].ToString();
-                loaiDV.SoLuong = int.Parse(reader["SoLuong"].ToString());
+                //loaiDV.SoLuong = int.Parse(reader["SoLuong"].ToString());
 
                 arr.Add(loaiDV);
             }
@@ -53,8 +53,8 @@ namespace QLKS
             string insertCommand = "INSERT INTO LoaiDichVu (TenDichVu, GiaCa, TinhTrang, SoLuong) VALUES('" +
                 info.TenDV + "', '" +
                 info.GiaCa + "', '" +
-                info.TinhTrang + "', '" +
-                info.SoLuong + "')";
+                info.TinhTrang + "')";
+            //info.SoLuong + "')";
 
             provider.executeNonQuery(insertCommand);
         }
@@ -64,8 +64,8 @@ namespace QLKS
             string updateCommand = "UPDATE LoaiDichVu (TenDichVu, GiaCa, TinhTrang, SoLuong) " +
                                     " SET TenDichVu = '" + info.TenDV + "'," +
                                     "TenGiaCa = '" + info.GiaCa + "'," +
-                                    "TinhTrang = '" + info.TinhTrang + "'," +
-                                    "SoLuong = '" + info.SoLuong + "'";
+                                    "TinhTrang = '" + info.TinhTrang + "'";
+                                    //"SoLuong = '" + info.SoLuong + "'";
 
             provider.executeNonQuery(updateCommand);
         }

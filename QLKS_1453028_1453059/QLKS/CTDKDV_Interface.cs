@@ -66,7 +66,7 @@ namespace QLKS
 
                     cmbType.DataSource = null;
                     cmbType.DataSource = dsLoai;
-                    cmbType.DisplayMember = "TenDichVu";
+                    cmbType.DisplayMember = "TenDV";
                 }
                
             }

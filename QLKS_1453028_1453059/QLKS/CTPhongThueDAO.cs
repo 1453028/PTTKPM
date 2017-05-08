@@ -67,18 +67,19 @@ namespace QLKS
         public void insert(CTPhongThueDTO info)
         {
             info.MaThue = String.Format("{0:ddMM}", info.NgayNhan) + String.Format("{0:HHmmss}", info.GioNhan); ;
-            //info.MaThue = "1";
-            string insertCommand = "INSERT INTO ChiTietPhongThue (MaThue, HoTen, CMND, MaPhong, NgayNhanPhong, GioNhanPhong, NgayTraPhong, GioTraPhong, TienDatCoc, GiaCaTDT) VALUES('" +
+            info.DaXuatHoaDon = false;
+            string insertCommand = "INSERT INTO ChiTietPhongThue (MaThue, HoTen, CMND, MaPhong, NgayNhanPhong, GioNhanPhong, NgayTraPhong, GioTraPhong, TienDatCoc, GiaCaTDT,DaXuatHoaDon) VALUES('" +
                 info.MaThue + "', '" +
                 info.HoTen + "', '" +
                 info.CMND + "', '" +
                 info.MaPhong + "', '" +
-                info.NgayNhan.ToShortDateString()+ "', '" +
+                info.NgayNhan.ToShortDateString() + "', '" +
                 info.GioNhan.ToShortTimeString() + "', '" +
-                info.NgayTra.ToShortDateString()+ "', '" +
+                info.NgayTra.ToShortDateString() + "', '" +
                 info.GioTra.ToShortTimeString() + "', '" +
                 info.TienDatCoc + "', '" +
-                info.GiaCaTDT + "')";
+                info.GiaCaTDT + "', " +
+                info.DaXuatHoaDon + ")";
             
             provider.executeNonQuery(insertCommand);
             
@@ -86,17 +87,26 @@ namespace QLKS
 
         public void update(CTPhongThueDTO info)
         {
-            string updateCommand = "UPDATE ChiTietPhongThue (MaThue, HoTen, CMND, MaPhong, NgayNhanPhong, GioNhanPhong, NgayTraPhong, GioTraPhong, TienDatCoc, GiaCaTDT) " +
-                                    "SET MaThue = '" + info.MaThue + "', " +
-                                    " HoTen = '" + info.HoTen + "', " +
-                                    " CMND = '" + info.CMND + "', " +
-                                    " MaPhong = " + info.MaPhong + ", " +
-                                    " NgayNhanPhong = " + info.NgayNhan.ToShortDateString() + ", " +
-                                    " GioNhanPhong = " + info.GioNhan.ToShortTimeString() + ", " +
-                                    " NgayTraPhong = " + info.NgayTra.ToShortDateString() + ", " +
-                                    " GioTraPhong = " + info.GioTra.ToShortTimeString() + ", " +
-                                    " TienDatCoc = " + info.TienDatCoc + ", " +
-                                    " GiaCaTDT = '" + info.GiaCaTDT + "'";
+            //string updateCommand = "UPDATE ChiTietPhongThue (MaThue, HoTen, CMND, MaPhong, NgayNhanPhong, GioNhanPhong, NgayTraPhong, GioTraPhong, TienDatCoc, GiaCaTDT) " +
+            //                        "SET MaThue = '" + info.MaThue + "', " +
+            //                        " HoTen = '" + info.HoTen + "', " +
+            //                        " CMND = '" + info.CMND + "', " +
+            //                        " MaPhong = " + info.MaPhong + ", " +
+            //                        " NgayNhanPhong = " + info.NgayNhan.ToShortDateString() + ", " +
+            //                        " GioNhanPhong = " + info.GioNhan.ToShortTimeString() + ", " +
+            //                        " NgayTraPhong = " + info.NgayTra.ToShortDateString() + ", " +
+            //                        " GioTraPhong = " + info.GioTra.ToShortTimeString() + ", " +
+            //                        " TienDatCoc = " + info.TienDatCoc + ", " +
+            //                        " GiaCaTDT = '" + info.GiaCaTDT + "'";
+
+            //provider.executeNonQuery(updateCommand);
+        }
+        public void updateTrangThai(CTPhongThueDTO info)
+        {
+            info.DaXuatHoaDon = true;
+            string updateCommand = "UPDATE ChiTietPhongThue (DaXuatHoaDon) " +
+                                    "SET DaXuatHoaDon = " + info.DaXuatHoaDon +
+                                    "WHERE MaThue = '" + info.MaThue+ "'";                                  
 
             provider.executeNonQuery(updateCommand);
         }

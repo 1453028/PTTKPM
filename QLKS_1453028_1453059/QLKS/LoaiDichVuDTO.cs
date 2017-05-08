@@ -11,7 +11,6 @@ namespace QLKS
         private string _TenDV;
         private int _GiaCa;
         private string _TinhTrang;
-        private int _SoLuong;
 
         public string TenDV
         {
@@ -36,10 +35,5 @@ namespace QLKS
             set { _TinhTrang = value; }
         }
 
-        public int SoLuong
-        {
-            get { return _SoLuong; }
-            set { _SoLuong = value; }
-        }
     }
 }

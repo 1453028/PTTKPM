@@ -116,7 +116,19 @@
     <Compile Include="LoaiPhongInterface.Designer.cs">
       <DependentUpon>LoaiPhongInterface.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhieuDatInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuDatInterface.Designer.cs">
+      <DependentUpon>PhieuDatInterface.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhieuDichVuDTO.cs" />
+    <Compile Include="PhieuThueInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuThueInterface.Designer.cs">
+      <DependentUpon>PhieuThueInterface.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhongCTL.cs" />
     <Compile Include="PhongDAO.cs" />
     <Compile Include="PhongDTO.cs" />
@@ -128,6 +140,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemDichVuInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemDichVuInterface.Designer.cs">
+      <DependentUpon>ThemDichVuInterface.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +176,12 @@
     <EmbeddedResource Include="LoaiPhongInterface.resx">
       <DependentUpon>LoaiPhongInterface.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PhieuDatInterface.resx">
+      <DependentUpon>PhieuDatInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuThueInterface.resx">
+      <DependentUpon>PhieuThueInterface.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PhongInterface.resx">
       <DependentUpon>PhongInterface.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +195,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ThemDichVuInterface.resx">
+      <DependentUpon>ThemDichVuInterface.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThemKhachHang.resx">
       <DependentUpon>ThemKhachHang.cs</DependentUpon>
     </EmbeddedResource>

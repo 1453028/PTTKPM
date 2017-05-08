@@ -59,11 +59,11 @@ namespace QLKS
                 info.MaPhongDat + "', '" +
                 info.HoTen + "', '" +
                 info.CMND + "', '" +
-                info.NgayNhanDK + "', '" +
-                info.GioNhanDK + "', '" +
-                info.NgayTraDK + "', '" +
-                info.GioTraDK + "', '" +
-                info.NgayDat + "', '" +
+                info.NgayNhanDK.ToShortDateString() + "', '" +
+                info.GioNhanDK.ToShortTimeString() + "', '" +
+                info.NgayTraDK.ToShortDateString() + "', '" +
+                info.GioTraDK.ToShortTimeString() + "', '" +
+                info.NgayDat.ToShortDateString() + "', '" +
                 info.TinhTrang + "')";
 
             provider.executeNonQuery(insertCommand);

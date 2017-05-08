@@ -121,14 +121,14 @@ namespace QLKS
             loaiDV.TenDV = txtTenLoaiCapNhat.Text;
             loaiDV.GiaCa = int.Parse(txtGiaCaCapNhat.Text);
             loaiDV.TinhTrang = (string)cmbTinhTrangCapNhat.SelectedItem;
-            loaiDV.SoLuong = int.Parse(txtSLCapNhat.Text);
+            //loaiDV.SoLuong = int.Parse(txtSLCapNhat.Text);
         }
         private void layThongTinThem(ref LoaiDichVuDTO loaiDV)
         {
             loaiDV.TenDV = txtTenLoaiThem.Text;
             loaiDV.GiaCa = int.Parse(txtGiaCaThem.Text);
             loaiDV.TinhTrang = (string)cmbTinhTrang.SelectedItem;
-            loaiDV.SoLuong = int.Parse(txtSLThem.Text);
+            //loaiDV.SoLuong = int.Parse(txtSLThem.Text);
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)

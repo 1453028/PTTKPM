@@ -18,6 +18,7 @@ namespace QLKS
         private DateTime _GioTra;
         private int _TienDatCoc;
         private int _GiaCaTDT;
+        private bool _DaXuatHoaDon;
 
         public string MaThue
         {
@@ -81,6 +82,19 @@ namespace QLKS
         {
             get { return _GiaCaTDT; }
             set { _GiaCaTDT = value; }
+        }
+
+        public bool DaXuatHoaDon
+        {
+            get
+            {
+                return _DaXuatHoaDon;
+            }
+
+            set
+            {
+                _DaXuatHoaDon = value;
+            }
         }
     }
 }

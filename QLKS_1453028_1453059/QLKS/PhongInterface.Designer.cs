@@ -34,11 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.rbtnLoaiPhong = new System.Windows.Forms.RadioButton();
-            this.rbtnHoaDon = new System.Windows.Forms.RadioButton();
-            this.rbtnKhachHang = new System.Windows.Forms.RadioButton();
-            this.rbtnDichVu = new System.Windows.Forms.RadioButton();
-            this.rbtnPhong = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnThemPhong = new System.Windows.Forms.Button();
             this.btnDanhSach = new System.Windows.Forms.Button();
@@ -52,6 +47,11 @@
             this.btnLapPhieuThue = new System.Windows.Forms.Button();
             this.btn_LapPhieuDat = new System.Windows.Forms.Button();
             this.dataGridViewPhong = new System.Windows.Forms.DataGridView();
+            this.rbtnLoaiPhong = new System.Windows.Forms.RadioButton();
+            this.rbtnHoaDon = new System.Windows.Forms.RadioButton();
+            this.rbtnKhachHang = new System.Windows.Forms.RadioButton();
+            this.rbtnDichVu = new System.Windows.Forms.RadioButton();
+            this.rbtnPhong = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -68,7 +68,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1171, 35);
+            this.panel1.Size = new System.Drawing.Size(1263, 35);
             this.panel1.TabIndex = 0;
             // 
             // labNgayThang
@@ -122,8 +122,162 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 35);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1171, 112);
+            this.panel2.Size = new System.Drawing.Size(1263, 112);
             this.panel2.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnThemPhong);
+            this.panel4.Controls.Add(this.btnDanhSach);
+            this.panel4.Controls.Add(this.btnTimKiem);
+            this.panel4.Controls.Add(this.btnCapNhat);
+            this.panel4.Controls.Add(this.SearchMaPhong);
+            this.panel4.Controls.Add(this.labMaPhong);
+            this.panel4.Controls.Add(this.cmbType);
+            this.panel4.Controls.Add(this.cmbSearchType);
+            this.panel4.Controls.Add(this.label10);
+            this.panel4.Controls.Add(this.btnLapPhieuThue);
+            this.panel4.Controls.Add(this.btn_LapPhieuDat);
+            this.panel4.Controls.Add(this.dataGridViewPhong);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 147);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1263, 604);
+            this.panel4.TabIndex = 3;
+            // 
+            // btnThemPhong
+            // 
+            this.btnThemPhong.Font = new System.Drawing.Font("Arial", 10F);
+            this.btnThemPhong.Location = new System.Drawing.Point(37, 105);
+            this.btnThemPhong.Name = "btnThemPhong";
+            this.btnThemPhong.Size = new System.Drawing.Size(464, 52);
+            this.btnThemPhong.TabIndex = 26;
+            this.btnThemPhong.Text = "Thêm phòng";
+            this.btnThemPhong.UseVisualStyleBackColor = true;
+            // 
+            // btnDanhSach
+            // 
+            this.btnDanhSach.Font = new System.Drawing.Font("Arial", 10F);
+            this.btnDanhSach.Location = new System.Drawing.Point(784, 154);
+            this.btnDanhSach.Name = "btnDanhSach";
+            this.btnDanhSach.Size = new System.Drawing.Size(425, 52);
+            this.btnDanhSach.TabIndex = 25;
+            this.btnDanhSach.Text = "Hiện toàn bộ danh sách";
+            this.btnDanhSach.UseVisualStyleBackColor = true;
+            this.btnDanhSach.Click += new System.EventHandler(this.btnDanhSach_Click);
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Font = new System.Drawing.Font("Arial", 10F);
+            this.btnTimKiem.Location = new System.Drawing.Point(1008, 96);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(201, 52);
+            this.btnTimKiem.TabIndex = 24;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.Font = new System.Drawing.Font("Arial", 10F);
+            this.btnCapNhat.Location = new System.Drawing.Point(37, 163);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(464, 52);
+            this.btnCapNhat.TabIndex = 23;
+            this.btnCapNhat.Text = "Cập nhật tình trạng phòng";
+            this.btnCapNhat.UseVisualStyleBackColor = true;
+            // 
+            // SearchMaPhong
+            // 
+            this.SearchMaPhong.Font = new System.Drawing.Font("Arial", 10F);
+            this.SearchMaPhong.Location = new System.Drawing.Point(784, 106);
+            this.SearchMaPhong.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchMaPhong.Name = "SearchMaPhong";
+            this.SearchMaPhong.Size = new System.Drawing.Size(200, 27);
+            this.SearchMaPhong.TabIndex = 22;
+            this.SearchMaPhong.TextChanged += new System.EventHandler(this.SearchMaPhong_TextChanged);
+            // 
+            // labMaPhong
+            // 
+            this.labMaPhong.AutoSize = true;
+            this.labMaPhong.Font = new System.Drawing.Font("Arial", 10F);
+            this.labMaPhong.Location = new System.Drawing.Point(664, 110);
+            this.labMaPhong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labMaPhong.Name = "labMaPhong";
+            this.labMaPhong.Size = new System.Drawing.Size(86, 19);
+            this.labMaPhong.TabIndex = 21;
+            this.labMaPhong.Text = "Mã phòng:";
+            // 
+            // cmbType
+            // 
+            this.cmbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbType.Font = new System.Drawing.Font("Arial", 10F);
+            this.cmbType.FormattingEnabled = true;
+            this.cmbType.Location = new System.Drawing.Point(1008, 42);
+            this.cmbType.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbType.Name = "cmbType";
+            this.cmbType.Size = new System.Drawing.Size(200, 27);
+            this.cmbType.TabIndex = 20;
+            this.cmbType.SelectedIndexChanged += new System.EventHandler(this.cmbType_SelectedIndexChanged);
+            // 
+            // cmbSearchType
+            // 
+            this.cmbSearchType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSearchType.Font = new System.Drawing.Font("Arial", 10F);
+            this.cmbSearchType.FormattingEnabled = true;
+            this.cmbSearchType.Location = new System.Drawing.Point(784, 42);
+            this.cmbSearchType.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbSearchType.Name = "cmbSearchType";
+            this.cmbSearchType.Size = new System.Drawing.Size(200, 27);
+            this.cmbSearchType.TabIndex = 19;
+            this.cmbSearchType.SelectedIndexChanged += new System.EventHandler(this.cmbSearchType_SelectedIndexChanged_1);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(663, 43);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(91, 24);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Tra cứu:";
+            // 
+            // btnLapPhieuThue
+            // 
+            this.btnLapPhieuThue.Font = new System.Drawing.Font("Arial", 10F);
+            this.btnLapPhieuThue.Location = new System.Drawing.Point(283, 42);
+            this.btnLapPhieuThue.Name = "btnLapPhieuThue";
+            this.btnLapPhieuThue.Size = new System.Drawing.Size(218, 52);
+            this.btnLapPhieuThue.TabIndex = 7;
+            this.btnLapPhieuThue.Text = "Thuê phòng";
+            this.btnLapPhieuThue.UseVisualStyleBackColor = true;
+            this.btnLapPhieuThue.Click += new System.EventHandler(this.btnLapPhieuThue_Click);
+            // 
+            // btn_LapPhieuDat
+            // 
+            this.btn_LapPhieuDat.Font = new System.Drawing.Font("Arial", 10F);
+            this.btn_LapPhieuDat.Location = new System.Drawing.Point(37, 42);
+            this.btn_LapPhieuDat.Name = "btn_LapPhieuDat";
+            this.btn_LapPhieuDat.Size = new System.Drawing.Size(228, 52);
+            this.btn_LapPhieuDat.TabIndex = 6;
+            this.btn_LapPhieuDat.Text = "Đặt phòng";
+            this.btn_LapPhieuDat.UseVisualStyleBackColor = true;
+            this.btn_LapPhieuDat.Click += new System.EventHandler(this.btn_LapPhieuDat_Click);
+            // 
+            // dataGridViewPhong
+            // 
+            this.dataGridViewPhong.AllowUserToAddRows = false;
+            this.dataGridViewPhong.AllowUserToDeleteRows = false;
+            this.dataGridViewPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPhong.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridViewPhong.Location = new System.Drawing.Point(0, 248);
+            this.dataGridViewPhong.Name = "dataGridViewPhong";
+            this.dataGridViewPhong.ReadOnly = true;
+            this.dataGridViewPhong.RowTemplate.Height = 24;
+            this.dataGridViewPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewPhong.Size = new System.Drawing.Size(1263, 356);
+            this.dataGridViewPhong.TabIndex = 0;
             // 
             // rbtnLoaiPhong
             // 
@@ -226,164 +380,11 @@
             this.rbtnPhong.UseMnemonic = false;
             this.rbtnPhong.UseVisualStyleBackColor = false;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnThemPhong);
-            this.panel4.Controls.Add(this.btnDanhSach);
-            this.panel4.Controls.Add(this.btnTimKiem);
-            this.panel4.Controls.Add(this.btnCapNhat);
-            this.panel4.Controls.Add(this.SearchMaPhong);
-            this.panel4.Controls.Add(this.labMaPhong);
-            this.panel4.Controls.Add(this.cmbType);
-            this.panel4.Controls.Add(this.cmbSearchType);
-            this.panel4.Controls.Add(this.label10);
-            this.panel4.Controls.Add(this.btnLapPhieuThue);
-            this.panel4.Controls.Add(this.btn_LapPhieuDat);
-            this.panel4.Controls.Add(this.dataGridViewPhong);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 147);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1171, 588);
-            this.panel4.TabIndex = 3;
-            // 
-            // btnThemPhong
-            // 
-            this.btnThemPhong.Font = new System.Drawing.Font("Arial", 10F);
-            this.btnThemPhong.Location = new System.Drawing.Point(37, 105);
-            this.btnThemPhong.Name = "btnThemPhong";
-            this.btnThemPhong.Size = new System.Drawing.Size(464, 52);
-            this.btnThemPhong.TabIndex = 26;
-            this.btnThemPhong.Text = "Thêm phòng";
-            this.btnThemPhong.UseVisualStyleBackColor = true;
-            // 
-            // btnDanhSach
-            // 
-            this.btnDanhSach.Font = new System.Drawing.Font("Arial", 10F);
-            this.btnDanhSach.Location = new System.Drawing.Point(700, 163);
-            this.btnDanhSach.Name = "btnDanhSach";
-            this.btnDanhSach.Size = new System.Drawing.Size(425, 52);
-            this.btnDanhSach.TabIndex = 25;
-            this.btnDanhSach.Text = "Hiện toàn bộ danh sách";
-            this.btnDanhSach.UseVisualStyleBackColor = true;
-            this.btnDanhSach.Click += new System.EventHandler(this.btnDanhSach_Click);
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.Font = new System.Drawing.Font("Arial", 10F);
-            this.btnTimKiem.Location = new System.Drawing.Point(924, 105);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(201, 52);
-            this.btnTimKiem.TabIndex = 24;
-            this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = true;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
-            // btnCapNhat
-            // 
-            this.btnCapNhat.Font = new System.Drawing.Font("Arial", 10F);
-            this.btnCapNhat.Location = new System.Drawing.Point(37, 163);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(464, 52);
-            this.btnCapNhat.TabIndex = 23;
-            this.btnCapNhat.Text = "Cập nhật tình trạng phòng";
-            this.btnCapNhat.UseVisualStyleBackColor = true;
-            // 
-            // SearchMaPhong
-            // 
-            this.SearchMaPhong.Font = new System.Drawing.Font("Arial", 10F);
-            this.SearchMaPhong.Location = new System.Drawing.Point(700, 115);
-            this.SearchMaPhong.Margin = new System.Windows.Forms.Padding(4);
-            this.SearchMaPhong.Name = "SearchMaPhong";
-            this.SearchMaPhong.Size = new System.Drawing.Size(200, 27);
-            this.SearchMaPhong.TabIndex = 22;
-            this.SearchMaPhong.TextChanged += new System.EventHandler(this.SearchMaPhong_TextChanged);
-            // 
-            // labMaPhong
-            // 
-            this.labMaPhong.AutoSize = true;
-            this.labMaPhong.Font = new System.Drawing.Font("Arial", 10F);
-            this.labMaPhong.Location = new System.Drawing.Point(580, 119);
-            this.labMaPhong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labMaPhong.Name = "labMaPhong";
-            this.labMaPhong.Size = new System.Drawing.Size(86, 19);
-            this.labMaPhong.TabIndex = 21;
-            this.labMaPhong.Text = "Mã phòng:";
-            // 
-            // cmbType
-            // 
-            this.cmbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbType.Font = new System.Drawing.Font("Arial", 10F);
-            this.cmbType.FormattingEnabled = true;
-            this.cmbType.Location = new System.Drawing.Point(924, 51);
-            this.cmbType.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbType.Name = "cmbType";
-            this.cmbType.Size = new System.Drawing.Size(200, 27);
-            this.cmbType.TabIndex = 20;
-            this.cmbType.SelectedIndexChanged += new System.EventHandler(this.cmbType_SelectedIndexChanged);
-            // 
-            // cmbSearchType
-            // 
-            this.cmbSearchType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSearchType.Font = new System.Drawing.Font("Arial", 10F);
-            this.cmbSearchType.FormattingEnabled = true;
-            this.cmbSearchType.Location = new System.Drawing.Point(700, 51);
-            this.cmbSearchType.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbSearchType.Name = "cmbSearchType";
-            this.cmbSearchType.Size = new System.Drawing.Size(200, 27);
-            this.cmbSearchType.TabIndex = 19;
-            this.cmbSearchType.SelectedIndexChanged += new System.EventHandler(this.cmbSearchType_SelectedIndexChanged_1);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(579, 52);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(91, 24);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Tra cứu:";
-            // 
-            // btnLapPhieuThue
-            // 
-            this.btnLapPhieuThue.Font = new System.Drawing.Font("Arial", 10F);
-            this.btnLapPhieuThue.Location = new System.Drawing.Point(281, 42);
-            this.btnLapPhieuThue.Name = "btnLapPhieuThue";
-            this.btnLapPhieuThue.Size = new System.Drawing.Size(220, 52);
-            this.btnLapPhieuThue.TabIndex = 7;
-            this.btnLapPhieuThue.Text = "Thuê phòng";
-            this.btnLapPhieuThue.UseVisualStyleBackColor = true;
-            this.btnLapPhieuThue.Click += new System.EventHandler(this.btnLapPhieuThue_Click);
-            // 
-            // btn_LapPhieuDat
-            // 
-            this.btn_LapPhieuDat.Font = new System.Drawing.Font("Arial", 10F);
-            this.btn_LapPhieuDat.Location = new System.Drawing.Point(37, 42);
-            this.btn_LapPhieuDat.Name = "btn_LapPhieuDat";
-            this.btn_LapPhieuDat.Size = new System.Drawing.Size(220, 52);
-            this.btn_LapPhieuDat.TabIndex = 6;
-            this.btn_LapPhieuDat.Text = "Đặt phòng";
-            this.btn_LapPhieuDat.UseVisualStyleBackColor = true;
-            this.btn_LapPhieuDat.Click += new System.EventHandler(this.btn_LapPhieuDat_Click);
-            // 
-            // dataGridViewPhong
-            // 
-            this.dataGridViewPhong.AllowUserToAddRows = false;
-            this.dataGridViewPhong.AllowUserToDeleteRows = false;
-            this.dataGridViewPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPhong.Location = new System.Drawing.Point(37, 241);
-            this.dataGridViewPhong.Name = "dataGridViewPhong";
-            this.dataGridViewPhong.ReadOnly = true;
-            this.dataGridViewPhong.RowTemplate.Height = 24;
-            this.dataGridViewPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewPhong.Size = new System.Drawing.Size(1088, 323);
-            this.dataGridViewPhong.TabIndex = 0;
-            // 
             // PhongInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1171, 735);
+            this.ClientSize = new System.Drawing.Size(1263, 751);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

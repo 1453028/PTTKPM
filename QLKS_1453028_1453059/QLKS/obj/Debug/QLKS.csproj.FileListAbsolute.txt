@@ -16,3 +16,6 @@ C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.exe
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.pdb
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.csprojResolveAssemblyReference.cache
+C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.PhieuThueInterface.resources
+C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.PhieuDatInterface.resources
+C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.ThemDichVuInterface.resources
