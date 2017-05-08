@@ -93,6 +93,7 @@ namespace QLKS
             ctThue.GioTra = dateTimePickerGioTra.Value;
             ctThue.TienDatCoc = int.Parse(txtTienDatCoc.Text);
             ctThue.GiaCaTDT = int.Parse(txtGiaCaTDT.Text);
+            //DateTime.Now.
         }
 
         private void txtTienDatCoc_KeyPress(object sender, KeyPressEventArgs e)

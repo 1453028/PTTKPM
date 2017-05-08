@@ -18,7 +18,7 @@ namespace QLKS
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 //            //DateTime dateToDisplay = DateTime.Today;
 //            //string display = dateToDisplay.ToShortDateString();
 //            //GlobalFunction.UpdateAppSetting("NgayThang", display);
@@ -34,9 +34,9 @@ namespace QLKS
 //>>>>>>> 6557281d2abd2deec2b869016a6feabb29d35d92
 
             Application.Run(new PhongInterface());
-=======
-            Application.Run(new CTDKDV_Interface());
->>>>>>> 8f9629ae8ef332ef757d855467a26bcc7fed8994
+//=======
+//            Application.Run(new CTDKDV_Interface());
+//>>>>>>> 8f9629ae8ef332ef757d855467a26bcc7fed8994
         }
 
        

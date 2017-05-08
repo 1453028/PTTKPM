@@ -367,10 +367,13 @@
             // 
             // dataGridViewPhong
             // 
+            this.dataGridViewPhong.AllowUserToAddRows = false;
+            this.dataGridViewPhong.AllowUserToDeleteRows = false;
             this.dataGridViewPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPhong.Location = new System.Drawing.Point(37, 241);
             this.dataGridViewPhong.Name = "dataGridViewPhong";
+            this.dataGridViewPhong.ReadOnly = true;
             this.dataGridViewPhong.RowTemplate.Height = 24;
             this.dataGridViewPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewPhong.Size = new System.Drawing.Size(1088, 323);

@@ -1,12 +1,13 @@
-<<<<<<< HEAD
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\bin\Debug\QLKS.exe.config
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\bin\Debug\QLKS.exe
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\bin\Debug\QLKS.pdb
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.CTDat_Interface.resources
+C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.CTDKDV_Interface.resources
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.CTThue_Interface.resources
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.DangNhapInterface.resources
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.Form1.resources
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.Form2.resources
+C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.LoaiDichVu_Interface.resources
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.LoaiPhongInterface.resources
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.PhongInterface.resources
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.Properties.Resources.resources
@@ -15,23 +16,3 @@ C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.exe
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.pdb
 C:\Users\BeoU\Desktop\PTTKPM(1)\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.csprojResolveAssemblyReference.cache
-=======
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\bin\Debug\QLKS.exe.config
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\bin\Debug\QLKS.exe
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\bin\Debug\QLKS.pdb
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.csprojResolveAssemblyReference.cache
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.CTDat_Interface.resources
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.CTThue_Interface.resources
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.DangNhapInterface.resources
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.Form1.resources
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.Form2.resources
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.LoaiPhongInterface.resources
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.PhongInterface.resources
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.Properties.Resources.resources
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.ThemKhachHang.resources
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.csproj.GenerateResource.Cache
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.exe
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.pdb
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.CTDKDV_Interface.resources
-C:\Users\USER\Desktop\PTTKPM\QLKS_1453028_1453059\QLKS\obj\Debug\QLKS.LoaiDichVu_Interface.resources
->>>>>>> 8f9629ae8ef332ef757d855467a26bcc7fed8994

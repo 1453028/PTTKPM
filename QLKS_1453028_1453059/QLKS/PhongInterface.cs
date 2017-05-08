@@ -142,7 +142,17 @@ namespace QLKS
 
         private void btn_LapPhieuDat_Click(object sender, EventArgs e)
         {
-
+            layThongTinPhongChon();
+            if (phong == null) { return; }
+            using (var form = new CTDat_Interface(phong))
+            {
+                var result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    //phong.TinhTrang = "Đặt";
+                    //dataGridViewPhong.DataSource = PhongControl.getTablePhong();
+                }
+            }
         }
 
         private void rbtnLoaiPhong_CheckedChanged(object sender, EventArgs e)

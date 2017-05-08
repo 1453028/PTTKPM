@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-
+using System.Globalization;
 namespace QLKS
 {
     class CTPhongThueDAO
@@ -66,19 +66,22 @@ namespace QLKS
 
         public void insert(CTPhongThueDTO info)
         {
-
+            info.MaThue = String.Format("{0:ddMM}", info.NgayNhan) + String.Format("{0:HHmmss}", info.GioNhan); ;
+            //info.MaThue = "1";
             string insertCommand = "INSERT INTO ChiTietPhongThue (MaThue, HoTen, CMND, MaPhong, NgayNhanPhong, GioNhanPhong, NgayTraPhong, GioTraPhong, TienDatCoc, GiaCaTDT) VALUES('" +
                 info.MaThue + "', '" +
                 info.HoTen + "', '" +
-                info.CMND + "', " +
-                info.NgayNhan + ", '" +
-                info.GioNhan + ", '" +
-                info.NgayTra + ", '" +
-                info.GioTra + ", '" +
-                info.TienDatCoc + ", '" +
+                info.CMND + "', '" +
+                info.MaPhong + "', '" +
+                info.NgayNhan.ToShortDateString()+ "', '" +
+                info.GioNhan.ToShortTimeString() + "', '" +
+                info.NgayTra.ToShortDateString()+ "', '" +
+                info.GioTra.ToShortTimeString() + "', '" +
+                info.TienDatCoc + "', '" +
                 info.GiaCaTDT + "')";
-
+            
             provider.executeNonQuery(insertCommand);
+            
         }
 
         public void update(CTPhongThueDTO info)
@@ -88,10 +91,10 @@ namespace QLKS
                                     " HoTen = '" + info.HoTen + "', " +
                                     " CMND = '" + info.CMND + "', " +
                                     " MaPhong = " + info.MaPhong + ", " +
-                                    " NgayNhanPhong = " + info.NgayNhan + ", " +
-                                    " GioNhanPhong = " + info.GioNhan + ", " +
-                                    " NgayTraPhong = " + info.NgayTra + ", " +
-                                    " GioTraPhong = " + info.GioTra + ", " +
+                                    " NgayNhanPhong = " + info.NgayNhan.ToShortDateString() + ", " +
+                                    " GioNhanPhong = " + info.GioNhan.ToShortTimeString() + ", " +
+                                    " NgayTraPhong = " + info.NgayTra.ToShortDateString() + ", " +
+                                    " GioTraPhong = " + info.GioTra.ToShortTimeString() + ", " +
                                     " TienDatCoc = " + info.TienDatCoc + ", " +
                                     " GiaCaTDT = '" + info.GiaCaTDT + "'";
 
